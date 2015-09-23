@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload videos</title>
+<style type="text/css">
+
+input { display: block;
+
+</style>    
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
+<script language="javascript">
+// IAM user which can upload new videos. And that's it.   
+AWS.config.update({accessKeyId: 'AKIAITW7U6FXAO6YQH5A', secretAccessKey: '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'});
+	  
+var db = new AWS.DynamoDB({params: {TableName: 'stridepro'}});
+var bucket = new AWS.S3({params: {Bucket: 'stridepro'}});
+
+function upload() {
+	var folder = encodeURIComponent(contact);
+
+	db.putItem(
+		{Item: 
+			{uploadId: {S: folder}, 
+			 contact: {S: contact},
+			 at: Date.now()}
+		}, 
+		function() {
+			var files = $('#videos').files;
+			for (var i = 0; i < files.length; i++) {
+				var file = files[i];
+				var key = folder + '/' + file.name;
+			
+				bucket.upload(
+					{Key: key, ContentType: file.type, Body: file},
+					function (err, data) {
+						$('#results').html(err ? 'ERROR!' : 'UPLOADED.');
+				});
+			}
+		}
+	);
+}
+	
+</script>
+</head>
+<body>
+<form>
+	<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" />
+	<input type="file" id="videos"  multiple />
+	<button onclick="upload(); return false">Upload</button>
+</form>
+			  
+<div id="progress"></div>
+</body>
+</html>
