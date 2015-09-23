@@ -10,22 +10,28 @@ input { display: block;
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
 <script language="javascript">
 // IAM user which can upload new videos. And that's it.   
-AWS.config.update({accessKeyId: 'AKIAITW7U6FXAO6YQH5A', secretAccessKey: '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'});
+AWS.config.update(
+	{accessKeyId: 'AKIAITW7U6FXAO6YQH5A', 
+	 secretAccessKey: '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',
+	 region: 'us-east-1',
+	 sslEnabled: true});
 	  
 var db = new AWS.DynamoDB({params: {TableName: 'stridepro'}});
 var bucket = new AWS.S3({params: {Bucket: 'stridepro'}});
 
 function upload() {
-	var folder = encodeURIComponent(contact);
+	var at = Date.now();
+	var contact = document.getElementById('contact').value;
+	var folder = 'videos/' + encodeURIComponent(contact) + '/' + at;
 
 	db.putItem(
 		{Item: 
 			{uploadId: {S: folder}, 
 			 contact: {S: contact},
-			 at: Date.now()}
+			 at: {S: at}}
 		}, 
 		function() {
-			var files = $('#videos').files;
+			var files = document.getElementById('videos').files;
 			for (var i = 0; i < files.length; i++) {
 				var file = files[i];
 				var key = folder + '/' + file.name;
@@ -33,7 +39,7 @@ function upload() {
 				bucket.upload(
 					{Key: key, ContentType: file.type, Body: file},
 					function (err, data) {
-						$('#results').html(err ? 'ERROR!' : 'UPLOADED.');
+						document.getElementById('progress').innerHTML = (err ? 'ERROR!' : 'UPLOADED.');
 				});
 			}
 		}
@@ -44,9 +50,9 @@ function upload() {
 </head>
 <body>
 <form>
-	<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" />
-	<input type="file" id="videos"  multiple />
-	<button onclick="upload(); return false">Upload</button>
+	<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
+	<input type="file" id="videos"  multiple required />
+	<button onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Upload</button>
 </form>
 			  
 <div id="progress"></div>
