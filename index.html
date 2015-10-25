@@ -11,8 +11,7 @@
 
 <style type="text/css">
 
-#prompt { 
-	max-width: 300px;
+button { 
 }
 
 #upload {
@@ -36,12 +35,11 @@ label {
 	border-bottom: 2px solid gray;
 	display: block;
 	width: 100%;
+	padding-bottom: 1px;
 }
 
 input[type="file"] {
 	margin-left: 10px;
-
-	clear: right;
 }
 
 input[type="text"] {
@@ -52,6 +50,8 @@ input[type="text"] {
 button { 
 	display: block;
 	margin-top: 10px;
+	max-width: 300px;
+	width: 100%;
 }
 
 </style>
@@ -73,6 +73,10 @@ var db = new AWS.DynamoDB({params: {TableName: 'stridepro'}});
 var bucket = new AWS.S3({params: {Bucket: 'stridepro'}});
 
 function upload() {
+	var submit = document.getElementById('submit');
+	submit.disabled = true;
+	submit.innerHTML = 'Uploading...';
+	
 	var at = Date.now();
 	var contact = document.getElementById('contact').value;
 	var note = document.getElementById('note').value;
