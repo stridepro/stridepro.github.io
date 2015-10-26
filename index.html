@@ -77,7 +77,7 @@ function upload() {
 	submit.disabled = true;
 	submit.innerHTML = 'Uploading...';
 	
-	var at = Date.now();
+	var at = Date.now().toString();
 	var contact = document.getElementById('contact').value;
 	var note = document.getElementById('note').value;
 	var folder = 'videos/' + encodeURIComponent(contact) + '/' + at;
