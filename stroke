@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- TradeDoubler site verification 2788186 -->
-		<title>stridePRO: free analysis of walking, running, and movement</title>
+		<title>strokePRO: free analysis of your swimming stroke</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -111,25 +111,11 @@ function upload() {
 	
 		<!-- Header -->
 			<header id="header">
-				<h1>Free stride analysis</h1>
+				<h1>Free stroke analysis</h1>
 				<a href="http://blog.stride.pro" class="button"/>stridePRO blog</a>
-				<p>stridePRO Stride Analysis is the future of movement analysis research. What normally requires a state-of-the-art laboratory and computers is now available to you, for free, by submitting a sample of your stride.</p>
+				<p>stridePRO Stride Analysis is the future of movement analysis research. What normally requires a state-of-the-art laboratory and computers is now available to you, for free, by submitting a sample of your stroke.</p>
 				<iframe width="420" height="315" style="float:right" src="https://www.youtube.com/embed/J3kiNEyYj0A" frameborder="0" allowfullscreen></iframe>
-				<p>Instructions:</p>
-
-<p>1. remove shoes and socks, roll up pants so ankles are visible</p>
-
-<p>2. hold smartphone at chest level, camera facing down</p>
-
-<p>3. ensure feet are within the view of the camera</p>
-
-<p>4. begin recording</p>
-
-<p>5. look up and walk about 10 steps (as normally as possible)</p>
-
-<p>6. stop recording once you have finished walking</p>
-
-<p>7. submit video, include your email address and any problems/pain/concerns you may have under "note" field (e.g. bunion right foot, left foot pain, right broken ankle 2008)</p>
+		
 			</header>
 
 		<!-- Form -->
