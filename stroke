@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- TradeDoubler site verification 2788186 -->
+		<title>stridePRO: free analysis of walking, running, and movement</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+<style type="text/css">
+
+button { 
+}
+
+#upload {
+	display: none;
+}
+
+.prompted #prompt {
+	display: none;
+}
+
+.prompted #upload {
+	display: block;
+}
+
+#upload { 
+	max-width: 700px;
+	width: 100%;
+}
+
+label { 
+	border-bottom: 2px solid gray;
+	display: block;
+	width: 100%;
+	padding-bottom: 1px;
+}
+
+input[type="file"] {
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	display: inline-block;
+	width: 40%;
+}
+
+button { 
+	display: block;
+	margin-top: 10px;
+	max-width: 300px;
+	width: 100%;
+}
+
+</style>
+		
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
+<script language="javascript">
+function prompted() { 
+	document.body.className += 'prompted';
+}
+
+// IAM user which can upload new videos. And that's it.   
+AWS.config.update(
+	{accessKeyId: 'AKIAIIHDL5XSGAEASGOA', 
+	 secretAccessKey: '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',
+	 region: 'us-east-1',
+	 sslEnabled: true});
+	  
+var db = new AWS.DynamoDB({params: {TableName: 'stridepro'}});
+var bucket = new AWS.S3({params: {Bucket: 'stridepro'}});
+
+function upload() {
+	var submit = document.getElementById('submit');
+	submit.disabled = true;
+	submit.innerHTML = 'Uploading...';
+	
+	var at = Date.now().toString();
+	var contact = document.getElementById('contact').value;
+	var note = document.getElementById('note').value;
+	var folder = 'videos/' + encodeURIComponent(contact) + '/' + at;
+
+	db.putItem(
+		{Item: 
+			{uploadId: {S: folder}, 
+			 contact: {S: contact},
+			 at: {N: at},
+			 note: {S: note}}
+		}, 
+		function() {
+			var files = document.getElementById('videos').files;
+			for (var i = 0; i < files.length; i++) {
+				var file = files[i];
+				var key = folder + '/' + file.name;
+			
+				bucket.upload(
+					{Key: key, ContentType: file.type, Body: file},
+					function (err, data) {
+						document.getElementById('progress').innerHTML = (err ? 'ERROR!' : 'UPLOADED.');
+				});
+			}
+		}
+	);
+}
+	
+</script>
+	<body>
+	
+		<!-- Header -->
+			<header id="header">
+				<h1>Free stride analysis</h1>
+				<a href="http://blog.stride.pro" class="button"/>stridePRO blog</a>
+				<p>stridePRO Stride Analysis is the future of movement analysis research. What normally requires a state-of-the-art laboratory and computers is now available to you, for free, by submitting a sample of your stride.</p>
+				<iframe width="420" height="315" style="float:right" src="https://www.youtube.com/embed/J3kiNEyYj0A" frameborder="0" allowfullscreen></iframe>
+				<p>Instructions:</p>
+
+<p>1. remove shoes and socks, roll up pants so ankles are visible</p>
+
+<p>2. hold smartphone at chest level, camera facing down</p>
+
+<p>3. ensure feet are within the view of the camera</p>
+
+<p>4. begin recording</p>
+
+<p>5. look up and walk about 10 steps (as normally as possible)</p>
+
+<p>6. stop recording once you have finished walking</p>
+
+<p>7. submit video, include your email address and any problems/pain/concerns you may have under "note" field (e.g. bunion right foot, left foot pain, right broken ankle 2008)</p>
+			</header>
+
+		<!-- Form -->
+			<button id="prompt" onclick="prompted()">Free stride analysis (submit video) &rarr;</button>
+			<form id="upload">
+				<label>Stride video(s): <input type="file" id="videos"  multiple required /></label>
+				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
+				<input type="text" id="note" placeholder="Why do you want stride analysis? (e.g. pain)" />
+				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for free analysis &rarr;</button>
+				<div id="progress"></div>
+			</form>		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="//instagram.com/stridepro" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="//www.facebook.com/StridePro-864437257004648" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="mailto:hello@stride.pro" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+		
+				<!--
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+				-->
+			</footer>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68304308-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>
