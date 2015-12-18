@@ -39,7 +39,6 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'http://spectorjosh.com/wp-content/uploads/2014/10/bottom-of-pool.jpg': 'center',
 							'images/bg01.jpg': 'center',
 							'images/bg03.jpg': 'center'
 						},
