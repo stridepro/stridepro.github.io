@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- TradeDoubler site verification 2788186 -->
-		<title>strokePRO: free analysis of your swimming stroke</title>
+		<title>strokePRO: Smartphone swimming stroke analysis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -99,7 +99,7 @@ function upload() {
 				bucket.upload(
 					{Key: key, ContentType: file.type, Body: file},
 					function (err, data) {
-						document.getElementById('progress').innerHTML = (err ? 'ERROR!' : 'UPLOADED.');
+						document.getElementById('progress').innerHTML = (err ? 'ERROR!' : 'Submission Received, Thank you!');
 				});
 			}
 		}
@@ -113,11 +113,12 @@ function upload() {
 			<header id="header">
 				<h1>Swimming stroke analysis performed by 2x NCAA champion, Ava Ohlgren</h1>
 				<p>stridePRO online stroke analysis gives you personalized stroke advice from world class swimmer, Ava Ohlgren.
+				<img src="http://img.spokeo.com/public/900-600/ava_ohlgren_2007_07_18.jpg" width=10% alt="Ava Ohlgren behind the blocks">
 				Simply submit a video of your stroke below and you will receive an email further information once submission is received. </p>
 			</header>
 
 		<!-- Form -->
-			<button id="prompt" onclick="prompted()">Free stroke analysis (submit video here) &rarr;</button>
+			<button id="prompt" onclick="prompted()">stroke analysis (submit video here) &rarr;</button>
 			<form id="upload">
 				<label>Stroke video(s): <input type="file" id="videos"  multiple required /></label>
 				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
