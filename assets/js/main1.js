@@ -41,7 +41,7 @@
 						images: {
 							'images/bg01.jpg': 'center',
 							'http://daymanspools.com/wp-content/uploads/2012/06/1448028341.jpg': 'center',
-							'http://www2.pictures.zimbio.com/gi/Shannon+Vreeland+2012+Olympic+Swimming+Team+42jHvNNOax4l.jpg':'center'
+							'http://www2.pictures.zimbio.com/gi/Shannon+Vreeland+2012+Olympic+Swimming+Team+42jHvNNOax4l.jpg':'center',
 							'images/bg03.jpg': 'center'
 						},
 
