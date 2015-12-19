@@ -125,8 +125,8 @@ function upload() {
 			<form id="upload">
 				<label>Stroke video(s): <input type="file" id="videos"  multiple required /></label>
 				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
-				<input type="text" id="note" placeholder="Why do you want stroke analysis? (e.g. what are your goals/concerns)" />
-				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for free analysis &rarr;</button>
+				<input type="text" id="note" placeholder="Why do you want stroke analysis?" />
+				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for stroke analysis &rarr;</button>
 				<div id="progress"></div>
 			</form>		
 
