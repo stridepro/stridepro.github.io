@@ -42,7 +42,10 @@
 							'images/bg01.jpg': 'center',
 							'http://daymanspools.com/wp-content/uploads/2012/06/1448028341.jpg': 'center',
 							'http://www2.pictures.zimbio.com/gi/Shannon+Vreeland+2012+Olympic+Swimming+Team+42jHvNNOax4l.jpg':'center',
-							'images/bg03.jpg': 'center'
+							'http://resources3.news.com.au/images/2012/07/03/1226415/028327-120703-c-eamon-sullivan.jpg': 'center',
+							'http://images.bwbx.io/cms/2012-08-02/0802_olympics_swimming_630x420.jpg': 'center',
+							'http://i.telegraph.co.uk/multimedia/archive/02298/joensen_2298307b.jpg': 'center',
+							'http://reachforthewall.com/wp-content/uploads/2012/07/US_Swim_Trials-0a6c9.jpg': 'center'
 						},
 
 					// Delay.
