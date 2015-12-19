@@ -40,7 +40,7 @@
 					// Images (in the format of 'url': 'alignment').
 						images: {
 							//'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
+							'http://dromo.co/wp-content/uploads/2013/08/Running-Track-_-Med11.jpg': 'center',
 							'images/bg03.jpg': 'center'
 						},
 
