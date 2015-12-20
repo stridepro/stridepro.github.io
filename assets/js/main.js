@@ -41,7 +41,9 @@
 						images: {
 							//'images/bg01.jpg': 'center',
 							'http://dromo.co/wp-content/uploads/2013/08/Running-Track-_-Med11.jpg': 'center',
-							'images/bg03.jpg': 'center'
+							'http://citytothesea.org/wp-content/uploads/3414064391_2eb4a3cdff_o.jpg': 'center',
+							'http://www.hometowndisposal.com/wp-content/uploads/2015/02/marathon.jpg': 'center',
+							'http://blog.walkjogrun.net/wp-content/uploads/2013/07/running-on-the-beach-dos-and-donts.jpg': 'center'
 						},
 
 					// Delay.
