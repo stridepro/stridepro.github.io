@@ -40,7 +40,7 @@
 					// Images (in the format of 'url': 'alignment').
 						images: {
 							//'images/bg01.jpg': 'center',
-							'https://www.keller-sports.eu/blog/wp-content/uploads/2014/11/track-running.jpg': 'center',
+							'http://media.philly.com/images/istock-beach-running.jpg': 'center',
 							'http://citytothesea.org/wp-content/uploads/3414064391_2eb4a3cdff_o.jpg': 'center',
 							'http://www.hometowndisposal.com/wp-content/uploads/2015/02/marathon.jpg': 'center',
 							'http://blog.walkjogrun.net/wp-content/uploads/2013/07/running-on-the-beach-dos-and-donts.jpg': 'center'
