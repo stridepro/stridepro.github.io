@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Cheese tasting 2015</title>
+<style type="text/css">
+
+body {
+  font-family: palatino, georgia;
+}
+  
+#cheeses {
+  width: 420px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgba(252, 242, 182, 0.3);
+  padding: 8px;
+}
+
+.cheese {
+  padding: 12px;
+  border-bottom: 1px solid rgba(80,0,0,0.2);
+  margin-top: 14px;
+  margin-bottom: 3px;
+  page-break-inside: avoid;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  margin-top: -22px;
+  display: none;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  opacity: 0.3;
+  font-size: 70px;
+  color: green;
+  font-style: italic;
+  top: -30px;
+  left: 0px;
+  width: 100%;
+  font-weight: normal;
+}
+
+em {
+  display: none;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  font-size: 110%;
+}
+
+header {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 140%; 
+  margin-top: 0px;
+  margin-bottom: 4px; 
+}
+
+button {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Cheese of the Eve</h1>
+
+<form method="post" action="" id="cheeses">
+<em>Please make a handful of choices.</em>
+
+<section class="cheese">
+<header>President Madrigal Cheese</header>
+<input type="checkbox" id="madrigal" />
+<p>Madrigal is a French full-fat semi-hard cow's milk cheese from the Loire valley in central France. This French Baby Swiss cheese is produced in the shape of a flattened ball in large, 5 or 12 kg wheels. It has a soft and smooth straw coloured paste with irregularly spaced holes/eyes. The taste is distinctively sweet and nutty, very similar to an Emmental or a Fol Epi. Madrigal pairs well with fruity red and white wines.
+</section>
+
+<section class="cheese">
+<header>Farmhouse raw cow milk's cheese</header>
+<input type="checkbox" id="farmhouse" />
+<p>Like the British Empire, cheddar conquered the world—it’s the planet’s most widely copied cheese. Ironically, with so much emphasis on imitation, the original has become an endangered species. It’s rarely found in this country and is worlds apart in character from its copycat cousins.
+<p>Montgomery’s is one of only three farms in its ancestral homeland making truly traditional farmhouse English cheddar. Big, clothbound drums are made by veteran cheesemaker Steve Bridges every day except Friday. All the milk comes from Jamie Montgomery's herd of just under 200 Holstein-Fresian cows, which graze on a nearby hill rumored, incidentally, to be the site of Camelot. Their cheeses have a golden color, a warm, flaky texture and a penetrating, memorable flavor. Each one is spoken for—they're taking no new customers.
+<p>Once, at a bar in London, someone told me "Cheddar should be like a neighbour's party," which is a line I don't quite understand but have never forgotten. It is a totally appropriate way to describe the easy, unforgettable flavor of Montgomery's cheddar.
+<p>Holy cow! The current wheel of English Farmhouse Cheddar has big, brothy flavors and a long, long finish. There are also a few blue veins in there, which show up now and again in this cheddar.  It was made in September 2014. 
+</section>
+
+<section class="cheese">
+<header>Pena Gorda</header>
+<input type="checkbox" id="pena" />
+<p>From the Sierra de Guadarrama near Madrid, Spain, this semi-hard goat’s milk cheese has a fresh, lightly salted flavor and ivory interior. The cheese is aged for four to five months and is BGM-free and origin protected. The cheese and rind contain no preservatives or inhibitors. Pena Gorda Cabra Curado is ideal paired with fresh fruit and Marcona almonds, with a pale beer or cava.
+</section>
+
+<section class="cheese">
+<header>Red Wax Dutch Gouda</header>
+<input type="checkbox" id="tjgouda" />
+<p>Holland makes many fine cheeses, but one of the best known is Gouda, named for the town in which it was first crafted.  Gouda is traditionally mellow and mild, with a slightly nutty flavor. Gouda is a nice cheese for snacking with crackers or fresh fruit. It melts well, too, making it a natural for burgers, panini or perhaps even fondue. We have Red Wax Gouda from Holland that's aged for 30 days, just long enough to develop its signature flavor.
+</section>
+
+<section class="cheese">
+<header>Piave Vecchio</header>
+<input type="checkbox" id="piave" />
+<p>Often likened to the king of Italian cheese, Parmigiano-Reggiano, Piave is a deliciously nutty, pasteurized cow's milk cheese from the Veneto in northern Italy. It has a concentrated sweet, crystalline paste with a full, tropical fruit flavor and slight almond bitterness. Aged for twelve months, Piave is wonderful as a table cheese, shaved over a salad of bitter greens, or enjoyed with an aperitif. Like Parmigiano, Piave has an affinity for both red and white wine, but is smoother and easier to eat right from the wheel. We also like it paired with an amber ale. 
+</section>
+
+<section class="cheese">
+<header>Fromager D'Affinois</header>
+<input type="checkbox" id="affinois" />
+<p>This French innovation may look like pudgy brie, but it's actually much creamier. The mild, buttery flavor has a sweetness that goes very well with champagne and fresh fruit. Fromage d'Affinois may remind you of a triple-creme, so loaded it is with silky fat. But that texture is achieved by ''ultra filtration,'' which breaks down the fat molecules in the milk in order to further disperse them through the paste. The result is a thick, nearly whipped spread of tangy, milky goodness.
+</section>
+
+<section class="cheese">
+<header>Black Betty</header>
+<input type="checkbox" id="betty" />
+<p>L'Amuse's Brabander Goat Gouda has become a favorite of the Essex Street Cheese collection, with its beautiful white paste and lovely flavors of caramel and butter. Every so often, affineur Betty Koster selects a handful of these wheels, normally aged 6-9 months, and holds onto them for an additional 6 months. The extra time in the caves results in a firmer paste and a more intense flavor. To distinguish the cheese from the younger Brabander, Koster coats it in black wax -- hence, the name Black Betty.
+<p>This gouda is made from the pasteurized milk of Saanen goats. The wheels are ripened in caves with slightly higher ambient temperatures to ensure proper drying and, in turn, fuller flavors that smack of pineapple and brown butter.
+</section>
+
+<section class="cheese">
+<header>Isle of Man Cheddar</header>
+<input type="checkbox" id="isle" />
+<p>Isle of Man Vintage Cheddar is a close textured, subtly sweet and nutty cheese of character, with a very long finish that lingers in the mouth to give lasting enjoyment. Matured for at least 12 to 15 months to develop a greater complexity and depth of flavour - truly sensational.</p>
+</section>
+
+<section class="cheese">
+<header>Morel Mushroom and Onion Jack</header>
+<input type="checkbox" id="morel" />
+<p>Morel Mushroom & Leek Monterey Jack cheese has an earthy flavor from the morel mushrooms complimented by leek onions and the creamy and buttery flavor of the monterey jack. This cheese is a great addition to any burger and very good with crackers.</p>
+</section>
+
+<section class="cheese">
+<header>Barrett's Smokehouse Horseradish</header>
+<input type="checkbox" id="horseradish" />
+<p>Barrett's Smokehouse brings you three generations of experience as Traditional Butchers passed down by great grandfathers, grandfathers  and  fathers. As Traditional Butchers we believe the sign of quality cannot be bought, therefore our reputation for quality relies entirely on the satisfaction of our customers. We stock a vast range of beef, pork, poultry, smoked meats and many specialty items.
+</section>
+
+<section class="cheese">
+<header>Herve Mons Ovalie Cendree</header> 
+<input type="checkbox" id="cendree" />
+<p>The luscious Ovalie Cendrée, a bloomy-rind goat cheese from France, is yet another little masterpiece from affineur Hervé Mons.
+<p>Produced by a goat-farm cooperative in the Poitou-Charentes, in western France, Ovalie Cendrée is new to the Mons line. The cooperative sends the cheese to Mons when it is a mere 10 days old; he ripens it for another 10 days - that's the affineur's job - then ships it to the U.S. But because of the mountains of paperwork along the way, it can be another month before this delicate cheese lands at Bay Area shops.
+<p>Cendrée means ashed, a reference to the slate-gray powder - it's food-grade charcoal - that is sprinkled over the young cheese. The ash raises the surface pH, which encourages the white mold to grow. My Ovalie had plentiful splotches of fuzzy gray mold, too, so there was quite the microbial community on this cheese.
+<p>Those surface denizens help ripen the cheese, causing it to soften from the outside in. I knew the Ovalie I purchased was ready to eat because it yielded to gentle pressure and that moldy exterior drooped a bit, both signs that the inside was softening.
+<p>Beneath the thin, damp rind was a chalk-white paste with an inviting mushroom scent. Still firm at the core, but almost molten near the surface, the interior offered a spectrum of textures.
+</section>
+
+<section class="cheese">
+<header>Blue Cashel Irish</header>
+<input type="checkbox" id="cashel" />
+<p>Jane and Louis Grubb have been making the Cashel Blue cheese on their farms since 1984. It is Ireland’s original, farmhouse blue cheese as till then there was no blue cheese made on Irish farms. Nearly 50% of the pasteurised milk used in the cheese comes from Grubb’s selected Holstein-Friesians cows while the remaining comes from local herds. The rennet used in making in this cheese makes it suitable for vegetarians.
+<p>Depending on the age, Cashel Blue texture varies from chalky to soft yellow paste and a characteristic bluish green mould. Young cheeses taste & smell chalky, lactic and mildly blue while the older ones are rich & buttery with a well-formed blue colour. Over 18 weeks of maturing, the cheese takes on a robust flavour and is granular in texture. It is one of the finest blue cheeses that relies on it's balance in taste, texture and aroma.
+</section>
+
+<section class="cheese">
+<header>Vieux Berger Roquefort</header>
+<input type="checkbox" id="roquefort" />
+<p>Made with penicillium roqueforti cultures produced from rye bread stored in local limestone caves of Cambalou, Roquefort-sur-Soulzon. Considered to be the ‘King of Cheeses’, Roquefort was the first French cheese to be awarded the AOC status in 1926. Vieux Berger is very special in that it is the last hand-made Roquefort in France. Yves Combes and his family are the smallest artisan producers of this fantastic cheese.
+<p>The texture is crumbly as a young cheese, becoming more cohesive as it matures with the mould fanning out to the edges in mouth-watering streaks and pockets. It has a tingly pungent taste and a distinct bouquet and flavour which combines the burnt-caramel taste of the unpasteurised ewe’s milk, with the sharp, salty, metallic tang of the blue mould.
+<p>Roquefort is fantastic in sauces or eaten simply with wedges of sourdough bread. It goes well in salads and pasta dishes and is sublime eaten with slices of fresh conference pears.It is traditionally enjoyed with Port or Sauternes but the sweetness of almost any dessert wine will compliment this cheese and cut through the salty tang, highlighting the sweetness of the Ewe’s milk.
+</section>
+
+<section class="cheese">
+<header>Shropshire Blue</header>
+<input type="checkbox" id="shropshire" />
+<p>Shropshire Blue is a cow's milk cheese made in the United Kingdom. The cheese was first made in the 1970s at the Castle Stuart dairy in Inverness, Scotland by Andy Williamson, a cheesemaker who had trained in the making of Stilton cheese in Nottinghamshire. The cheese was first known as 'Inverness-shire Blue' or 'Blue Stuart', but was eventually marketed as 'Shropshire Blue', a name chosen to help increase its popularity, despite it having no link to the county of Shropshire.
+<p>After the Castle Stuart dairy was closed down in 1980, the cheese was revived by Elliot Hulme and Harry Hanlin of Cheshire, but once again the manufacture soon ceased. The cheese is now made by the Long Clawson, Leicestershire and the Cropwell Bishop and Colston Bassett dairies in Nottinghamshire. Since 2010, Shropshire Blue has been made by the Shropshire Cheese Company, a Shropshire Dairy Farm on the Welsh Border.
+</section>
+
+<section class="cheese">
+<header>Ghost Pepper Jack</header>
+<input type="checkbox" id="ghostjack" />
+<p>The bhut jolokia (Assamese: ভোট-জলকীয়া, IPA: [ˈbʱʊt.zɔˌlɔkiˌja]), also known as bih jolokia, u-morok, ghost pepper, red naga, Naga Jolokia, and ghost chili, is an interspecific hybrid chili pepper cultivated in the Indian states of Arunachal Pradesh, Assam, Nagaland and Manipur. It is an interspecies hybrid of C. chinense and C. frutescens genes.
+<p>In 2007, Guinness World Records certified that the ghost pepper was the world's hottest chili pepper, 400 times hotter than Tabasco sauce. The ghost chili is rated at more than 1 million Scoville heat units (SHUs). However, the ghost chili was shortly superseded by the Infinity chili in 2011, followed by the Naga Viper, the Trinidad moruga scorpion in 2012, and the Carolina Reaper on August 7, 2013.
+</section>
+
+<button>Order</button>
+</form>
+
+
+
+</body>
+</html>
