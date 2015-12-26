@@ -94,14 +94,21 @@ function upload() {
 		}, 
 		function() {
 			var files = document.getElementById('videos').files;
+			var progressBar = document.getElementById('progress');
+			
 			for (var i = 0; i < files.length; i++) {
 				var file = files[i];
 				var key = folder + '/' + file.name;
 			
-				bucket.upload(
+				var upload = bucket.upload(
 					{Key: key, ContentType: file.type, Body: file},
 					function (err, data) {
-						document.getElementById('progress').innerHTML = (err ? 'ERROR!' : 'UPLOADED.');
+						document.getElementById('progress').value = (err ? 'ERROR!' : 'UPLOADED.');
+				});
+				
+				upload.on('httpUploadProgress', function (progress) {
+					var percent = progress.loaded / progress.total;
+					progressBar.value = percent;
 				});
 			}
 		}
@@ -141,7 +148,7 @@ function upload() {
 				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
 				<input type="text" id="note" placeholder="Why do you want stride analysis? (e.g. pain)" />
 				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for free analysis &rarr;</button>
-				<div id="progress"></div>
+				<progress value="0" max="100" id="progress"></progress>
 			</form>		
 
 		<!-- Footer -->
