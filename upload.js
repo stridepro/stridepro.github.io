@@ -1,5 +1,5 @@
 function prompted() { 
-	document.body.className += 'prompted';
+	document.body.classList.add('prompted');
 }
 
 // IAM user which can upload new videos. And that's it.   

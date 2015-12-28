@@ -19,33 +19,33 @@
 		<!-- Header -->
 			<header id="header">
 				<h1>Free stride analysis</h1>
-				<a href="http://blog.stride.pro" class="button"/>stridePRO blog</a>
-				<p>stridePRO Stride Analysis is the future of movement analysis research. What normally requires a state-of-the-art laboratory and computers is now available to you, for free, by submitting a sample of your stride.</p>
-				<iframe width="420" height="315" style="float:right" src="https://www.youtube.com/embed/J3kiNEyYj0A" frameborder="0" allowfullscreen></iframe>
-				<p>Instructions:</p>
-
-<p>1. remove shoes and socks, roll up pants so ankles are visible</p>
-
-<p>2. hold smartphone at chest level, camera facing down</p>
-
-<p>3. ensure feet are within the view of the camera</p>
-
-<p>4. begin recording</p>
-
-<p>5. look up and walk about 10 steps (as normally as possible)</p>
-
-<p>6. stop recording once you have finished walking</p>
-
-<p>7. submit video, include your email address and any problems/pain/concerns you may have under "note" field (e.g. bunion right foot, left foot pain, right broken ankle 2008)</p>
+				<p>stridePRO is the future of movement analysis research. What normally requires a state-of-the-art laboratory and computers is now available to you, for free, by submitting a sample of your stride.</p>
+				<button id="prompt" onclick="prompted()">Submit your video for free analysis &rarr;</button>
 			</header>
 
 		<!-- Form -->
-			<button id="prompt" onclick="prompted()">Free stride analysis (submit video) &rarr;</button>
+			
 			<form id="upload">
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/J3kiNEyYj0A" frameborder="0" allowfullscreen></iframe>
+				<ol>
+<li>remove shoes and socks, roll up pants so ankles are visible
+
+<li>hold smartphone at chest level, camera facing down
+
+<li>ensure feet are within the view of the camera
+
+<li>begin recording
+
+<li>look up and walk about 10 steps (as normally as possible)
+
+<li>stop recording once you have finished walking
+
+<li>submit video, include your email address and any problems/pain/concerns you may have under "note" field (e.g. bunion right foot, left foot pain, right broken ankle 2008)
+</ol>				
 				<label>Stride video(s): <input type="file" id="videos"  multiple required /></label>
 				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
 				<input type="text" id="note" placeholder="Why do you want stride analysis? (e.g. pain)" />
-				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for free analysis &rarr;</button>
+				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Upload &rarr;</button>
 			</form>		
 			<progress value="0" max="100" id="progress"></progress>
 			<span id="thanks">Thank you; we'll be in touch.</span>

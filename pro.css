@@ -25,6 +25,10 @@ label {
 	padding-bottom: 1px;
 }
 
+input {
+	margin-bottom: 4px;
+}
+
 input[type="file"] {
 	margin-left: 10px;
 }
