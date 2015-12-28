@@ -57,6 +57,26 @@ button {
 	width: 100%;
 }
 
+progress { 
+	display: none;
+}
+
+.uploading #prompt, .uploading #upload {
+	display: none;
+}
+
+.uploading progress { 
+	display: inline-block;
+}
+
+#thanks { 
+	display: none;
+}
+
+.done #thanks {
+	display: inline-block;
+}
+
 </style>
 		
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
@@ -76,9 +96,10 @@ var db = new AWS.DynamoDB({params: {TableName: 'stridepro'}});
 var bucket = new AWS.S3({params: {Bucket: 'stridepro'}});
 
 function upload() {
-	var submit = document.getElementById('submit');
+	document.body.classList.add('uploading');
+	/*var submit = document.getElementById('submit');
 	submit.disabled = true;
-	submit.innerHTML = 'Uploading...';
+	submit.innerHTML = 'Uploading...';*/
 	
 	var at = Date.now().toString();
 	var contact = document.getElementById('contact').value;
@@ -103,11 +124,12 @@ function upload() {
 				var upload = bucket.upload(
 					{Key: key, ContentType: file.type, Body: file},
 					function (err, data) {
-						document.getElementById('progress').value = (err ? 'ERROR!' : 'UPLOADED.');
+						if (err) alert(err);
+						document.body.classList.add('done');
 				});
 				
 				upload.on('httpUploadProgress', function (progress) {
-					var percent = progress.loaded / progress.total;
+					var percent = Math.round(100 * progress.loaded / progress.total);
 					progressBar.value = percent;
 				});
 			}
@@ -148,9 +170,9 @@ function upload() {
 				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
 				<input type="text" id="note" placeholder="Why do you want stride analysis? (e.g. pain)" />
 				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for free analysis &rarr;</button>
-				<progress value="0" max="100" id="progress"></progress>
 			</form>		
-
+			<progress value="0" max="100" id="progress"></progress>
+			<span id="thanks">Thank you; we'll be in touch.</span>
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
