@@ -6,109 +6,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="pro.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<link rel="shortcut icon" href="/images/faviconswimmer.ico" type="image/x-icon">
 		<link rel="icon" href="/images/faviconswimmer.ico" type="image/x-icon">
 
-<style type="text/css">
-
-button { 
-}
-
-#upload {
-	display: none;
-}
-
-.prompted #prompt {
-	display: none;
-}
-
-.prompted #upload {
-	display: block;
-}
-
-#upload { 
-	max-width: 700px;
-	width: 100%;
-}
-
-label { 
-	border-bottom: 2px solid gray;
-	display: block;
-	width: 100%;
-	padding-bottom: 1px;
-}
-
-input[type="file"] {
-	margin-left: 10px;
-}
-
-input[type="text"] {
-	display: inline-block;
-	width: 40%;
-}
-
-button { 
-	display: block;
-	margin-top: 10px;
-	max-width: 300px;
-	width: 100%;
-}
-
-</style>
-		
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
-<script language="javascript">
-function prompted() { 
-	document.body.className += 'prompted';
-}
-
-// IAM user which can upload new videos. And that's it.   
-AWS.config.update(
-	{accessKeyId: 'AKIAIIHDL5XSGAEASGOA', 
-	 secretAccessKey: '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',
-	 region: 'us-east-1',
-	 sslEnabled: true});
-	  
-var db = new AWS.DynamoDB({params: {TableName: 'stridepro'}});
-var bucket = new AWS.S3({params: {Bucket: 'stridepro'}});
-
-function upload() {
-	var submit = document.getElementById('submit');
-	submit.disabled = true;
-	submit.innerHTML = 'Uploading...';
-	
-	var at = Date.now().toString();
-	var contact = document.getElementById('contact').value;
-	var note = document.getElementById('note').value;
-	var folder = 'videos/' + encodeURIComponent(contact) + '/' + at;
-
-	db.putItem(
-		{Item: 
-			{uploadId: {S: folder}, 
-			 contact: {S: contact},
-			 at: {N: at},
-			 note: {S: note}}
-		}, 
-		function() {
-			var files = document.getElementById('videos').files;
-			for (var i = 0; i < files.length; i++) {
-				var file = files[i];
-				var key = folder + '/' + file.name;
-			
-				bucket.upload(
-					{Key: key, ContentType: file.type, Body: file},
-					function (err, data) {
-						document.getElementById('progress').innerHTML = (err ? 'ERROR!' : 'Submission Received, Thank you!');
-				});
-			}
-		}
-	);
-}
-	
-</script>
 	<body>
 	
 		<!-- Header -->
@@ -148,6 +52,7 @@ function upload() {
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main1.js"></script>
+			<script src="upload.js"></script>
 			<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,0 +1,62 @@
+button { 
+}
+
+#upload {
+	display: none;
+}
+
+.prompted #prompt {
+	display: none;
+}
+
+.prompted #upload {
+	display: block;
+}
+
+#upload { 
+	max-width: 700px;
+	width: 100%;
+}
+
+label { 
+	border-bottom: 2px solid gray;
+	display: block;
+	width: 100%;
+	padding-bottom: 1px;
+}
+
+input[type="file"] {
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	display: inline-block;
+	width: 40%;
+}
+
+button { 
+	display: block;
+	margin-top: 10px;
+	max-width: 300px;
+	width: 100%;
+}
+
+progress { 
+	display: none;
+}
+
+.uploading #prompt, .uploading #upload {
+	display: none;
+}
+
+.uploading progress { 
+	display: inline-block;
+}
+
+#thanks { 
+	display: none;
+}
+
+.done #thanks {
+	display: inline-block;
+}
