@@ -39,11 +39,9 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'https://yourlifeisastory.files.wordpress.com/2013/05/help-fixing-my-broken-down-car-21428615.jpg': 'center',
+							'http://www.virginmedia.com/images/mechanic-electoronics-431x300.jpg': 'center',
 							
-							'http://ldsmag.com/wp-content/uploads/2015/03/broken-down-1024x683.jpg': 'center',
-							'http://images.thecarconnection.com/lrg/broken-down-car_100344753_l.jpg':'center',
-							'http://www.micriaautomotive.com.au/portals/0/BMW-M6-Gran-Coupe-engine.jpg': 'center',
+							'http://o.aolcdn.com/dims-shared/dims3/GLOB/legacy_thumbnail/800x450/format/jpg/quality/85/http://o.aolcdn.com/os/autos/photos/miscellaneous/car-mechanic-garage-612nm022211.jpg': 'center',
 						},
 
 					// Delay.
