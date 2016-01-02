@@ -8,6 +8,17 @@ function chosen() {
 
 document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById('videos').addEventListener('change', chosen);
+	
+	var fblink = document.getElementById('fblink');
+	if (/Android/i.test(navigator.userAgent)) {
+		fblink.href = 'fb-messenger://user/864437257004648';
+	}
+	else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+		fblink.href = 'fb-messenger://user-thread/864437257004648';
+	}
+	else {
+		fblink.href = 'https://www.facebook.com/messages/864437257004648';
+	}
 }, false);
 
 // IAM user which can upload new videos. And that's it.   
