@@ -31,6 +31,7 @@ input {
 
 input[type="file"] {
 	margin-left: 10px;
+	border: none;
 }
 
 input[type="text"] {

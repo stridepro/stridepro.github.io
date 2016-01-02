@@ -2,6 +2,14 @@ function prompted() {
 	document.body.classList.add('prompted');
 }
 
+function chosen() { 
+	document.body.classList.add('chosen');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+	document.getElementById('videos').addEventListener('change', chosen);
+}, false);
+
 // IAM user which can upload new videos. And that's it.   
 AWS.config.update(
 	{accessKeyId: 'AKIAIIHDL5XSGAEASGOA', 
