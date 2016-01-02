@@ -11,19 +11,59 @@ body {
 	font-family: helvetica;
 }
 
-#will {
-	width: 150px;
-	margin-right: 10px;
-	float: left;
+@media screen 
+  and (max-device-width: 450px) {
+
+
+body {
+	color: white;
+	font-size: 150%;
+}  
+
+a {
+	color: lightblue;
 }
 
-#upload {
+#will {
+	position: fixed;
+	top: -100px;
+	left: 0;
+	z-index: -1;
+	width: 100%;
 }
 
 #hi {
 	line-height: 120%;
 	font-size: 140%;
 	display: block;
+}
+
+section {
+	background-color: rgba(0,0,0,0.3);
+}
+
+}
+
+
+@media screen 
+  and (min-device-width: 451px) {
+
+#will {
+	width: 150px;
+	margin-right: 10px;
+	float: left;
+}
+
+#hi {
+	line-height: 120%;
+	font-size: 140%;
+	display: block;
+}
+
+section {
+	background-color: rgba(0,0,0,0.03);
+}
+
 }
 
 #upload {
@@ -41,7 +81,6 @@ body {
 section {
 	padding: 5px;
 	margin-bottom: 10px;
-	background-color: rgba(0,0,0,0.03);
 	min-width: 300px;
 	display: inline-block;
 }
@@ -60,7 +99,7 @@ label {
 				<p id="hi">Send me video or audio of your car's problem. I'll reply within 5 minutes.</p>
 
 				<section id="fb">
-				<a href="fb-messenger://user/864437257004648">Send via Facebook</a>
+				<a href="fb-messenger://user-thread/864437257004648">Send via Facebook</a>
 				</section>
 				<section id="web">
 				<label>Send in browser: <input type="file" id="videos"  multiple required /></label>
