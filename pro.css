@@ -22,8 +22,8 @@ label {
 	padding-bottom: 1px;
 }
 
-input {
-	margin-bottom: 4px;
+input, textarea {
+	margin-bottom: 9px;
 }
 
 input[type="file"] {
@@ -31,16 +31,13 @@ input[type="file"] {
 	border: none;
 }
 
-input[type="text"] {
-	display: inline-block;
-	width: 40%;
+input[type="email"], input[type="text"], textarea, button {
+	display: block;
+	width: 100%;
 }
 
 button { 
-	display: block;
 	margin-top: 10px;
-	max-width: 300px;
-	width: 100%;
 }
 
 progress { 

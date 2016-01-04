@@ -7,9 +7,10 @@
 		<link rel="icon" href="/images/car.ico" type="image/x-icon">
 <style type="text/css">
 
-body {
+body, input, textarea, button {
 	font-family: helvetica;
 }
+
 
 @media screen 
   and (max-device-width: 450px) {
@@ -17,11 +18,19 @@ body {
 
 body {
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
 	font-size: 200%;
 }  
 
+input, textarea, button {
+	font-size: 100%;
+}
+
 a {
-	color: lightblue;
+	color: white;
 }
 
 #will {
@@ -34,12 +43,23 @@ a {
 
 #hi {
 	line-height: 120%;
+	font-size: 150%;
 	display: block;
 	width: 100%;
+	text-align: center;
+}
+
+#upload {
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 4px;
+	max-width: 100%;
+	padding: 5px;
 }
 
 section {
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,100,0,0.3);
+	border-radius: 4px;
+	width: 100%;
 }
 
 }
@@ -79,7 +99,7 @@ section {
 }
 
 section {
-	padding: 5px;
+	padding: 10px;
 	margin-bottom: 10px;
 	min-width: 300px;
 	display: inline-block;
@@ -92,7 +112,6 @@ label {
 		
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
 	<body class="prompted">
-	<div id="page">
 	
 			<form id="upload">
 				<img id="will" src="images/will.jpg" alt="Will" title="Hi!" />
@@ -104,9 +123,9 @@ label {
 				<section id="web">
 				<label>Send in browser: <input type="file" id="videos"  multiple required /></label>
 				<div id="fields">
-				<input type="text" id="contact" placeholder="Contact info: Email address/phone" size="30" required />
-				<input type="text" id="note" placeholder="Problem description" />
-				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Upload &rarr;</button>
+				<input type="email" id="contact" placeholder="Email address" size="30" required />
+				<textarea id="note" placeholder="Problem description"></textarea>
+				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Send &rarr;</button>
 				</div>
 				</section>
 			</form>		
@@ -123,6 +142,5 @@ label {
   ga('send', 'pageview');
 </script>
 
-</div>
 	</body>
 </html>
