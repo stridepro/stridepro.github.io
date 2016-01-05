@@ -68,23 +68,43 @@ section {
 @media screen 
   and (min-device-width: 451px) {
 
-#will {
-	width: 150px;
-	margin-right: 10px;
-	float: left;
-}
-
-#hi {
-	line-height: 120%;
-	font-size: 140%;
-	display: block;
+#holder {
+	height: 510px;
+	 width: 100%;
+	 position: relative;
 }
 
 section {
-	background-color: rgba(0,0,0,0.03);
+    background-color: white;
+    width: 324px;
+    padding: 60px 33px;
+    float: right;
+    margin-top: 110px;
+    margin-right: 40px;
 }
 
+.lineone {
+	color: #fff;
+    font-size: 72px;
+    position: absolute;
+    bottom: 90px;
+    font-weight: 700;
+    left: 40px;
 }
+
+.linetwo {
+	color: #fff;
+    font-size: 72px;
+    position: absolute;
+    bottom: 90px;
+    font-weight: 700;
+    left: 40px;
+}
+
+/*section {
+	background-color: rgba(0,0,0,0.03);
+}*/
+
 
 #upload {
 		margin: auto;
@@ -114,8 +134,10 @@ label {
 	<body class="prompted">
 	
 			<form id="upload">
-				<img id="will" src="images/will.jpg" alt="Will" title="Hi!" />
-				<p id="hi">Send me video or audio of your car's problem. I'll reply within 5 minutes.</p>
+			[!--	<img id="will" src="images/will.jpg" alt="Will" title="Hi!" /> --]
+				<img id="holder" src="http://previews.123rf.com/images/olegdudko/olegdudko1506/olegdudko150600678/41379670-Mechanic-Auto-Repair-Shop-Computer--Stock-Photo.jpg" title="Auto Mechanic" alt="Friendly Auto Mechanic">
+				<p id="hi" class="lineone">Car Repair Made Easy:</p>
+				<p id="hi" class="linetwo">Send me video or audio of your car and I will respond within 5 minutes with a recommendation.</p>
 
 				<section id="fb">
 				<a id="fblink">Send via Facebook</a>
