@@ -136,7 +136,21 @@ h3{
     margin-top: 6px;
     }
 #progress{
-    margin-left: 83px;}
+    margin-left: 83px;
+    display: none;
+}
+#thanks{
+    display: none;
+}
+.uploading #progress{
+    display:block;
+}
+.uploading #prompt, .uploading #upload{
+    display:none;
+}
+.done #thanks{
+    display: inline-block;
+}
 a{
     text-decoration: none;
     }
