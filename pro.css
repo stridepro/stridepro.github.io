@@ -1,61 +1,138 @@
-#upload {
-	display: none;
-}
+header{
+    background-color: #FFFFFF;
+    background-size: cover;
+    height: 60px;
+    }
+.logo{
+    height: 30px;
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+#email{
+    line-height: 12px;
+    color: #0173bd;
+    font-family: Arial;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid #0173bd;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top:6px;
+    float: right;
+    }
+    
+#home-header-inner-container{
+    height:400px;
+    position: relative;
+    }
+#banner{
+    background-image: url("http://previews.123rf.com/images/olegdudko/olegdudko1506/olegdudko150600678/41379670-Mechanic-Auto-Repair-Shop-Computer--Stock-Photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+.home-header{
+    z-index: 100;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    left: 150px;
+    top: 350px;
+    display: inline-block;
+    font-family: verdana;
+    margin: 200px 0px 200px 100px;
 
-.prompted #prompt {
-	display: none;
-}
+    }
+h2{
+    height: 100px;
+    width: 300px;
+    background-color: transparent;
+    }
 
-.prompted #upload {
-	display: block;
-}
-
-#upload { 
-	max-width: 700px;
-	width: 100%;
-}
-
-label { 
-	border-bottom: 2px solid gray;
-	display: block;
-	width: 100%;
-	padding-bottom: 1px;
-}
-
-input, textarea {
-	margin-bottom: 9px;
-}
-
-input[type="file"] {
-	margin-left: 10px;
-	border: none;
-}
-
-input[type="email"], input[type="text"], textarea, button {
-	display: block;
-	width: 100%;
-}
-
-button { 
-	margin-top: 10px;
-}
-
-progress { 
-	display: none;
-}
-
-.uploading #prompt, .uploading #upload {
-	display: none;
-}
-
-.uploading progress { 
-	display: inline-block;
-}
-
-#thanks { 
-	display: none;
-}
-
-.done #thanks {
-	display: inline-block;
-}
+#box{
+    background-color: white;
+    width: 324px;
+    float: right;
+    margin-top: 110px;
+    margin-left:110px;
+    margin-right: 150px
+    }
+h3{
+    color: #3E5B7F;
+    background: white;
+    font-family: Georgia, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    }
+#upload{
+    background: white;
+    margin: 0 auto;
+    }
+#fb{
+    text-align: center;
+    }
+#fblink{
+    color: blue;
+    font-family: calibri;
+    }
+#videos{
+    text-align: left;
+    padding-left: 10px;
+    }
+#browser{
+    margin-left: 110px;
+    margin-bottom: 10px;
+    font-family: calibri;
+    
+    }
+#fields{
+    padding-left: 10px;
+    padding-top: 4px;
+    }
+#contact{
+    font-family: calibri;
+    }
+#note{
+    font-family: calibri;
+    }
+#bottom-button{
+    background-color: #3E5B7F !important;
+    color: #fff !important;
+    border: none !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 7px 30px !important;
+    cursor: pointer;
+    -ie-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    margin-left: 110px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    }
+#progress{
+    margin-left: 83px;}
+a{
+    text-decoration: none;
+    }
