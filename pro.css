@@ -155,3 +155,16 @@ h3{
 a{
     text-decoration: none;
     }
+ul{
+    width: 100%;
+    background-color: #0C4A7B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    margin-top: 200px;
+    }
