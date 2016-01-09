@@ -92,12 +92,16 @@ h3{
     margin-left: 110px;
     margin-bottom: 10px;
     font-family: calibri;
-    
     }
 #fields{
     padding-left: 10px;
     padding-top: 4px;
+    display: none;
     }
+    
+.chosen #fields{
+    display: block;
+}
 #contact{
     font-family: calibri;
     }
