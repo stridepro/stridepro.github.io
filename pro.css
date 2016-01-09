@@ -63,7 +63,8 @@ h2{
     float: right;
     margin-top: 110px;
     margin-left:110px;
-    margin-right: 150px
+    margin-right: 150px;
+    padding-bottom: 15px;
     }
 h3{
     color: #3E5B7F;
