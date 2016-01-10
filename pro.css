@@ -201,3 +201,44 @@ a{
     width: 15px;
     margin-right: 3px;
     }
+    
+@media only screen and (max-width: 900px){
+
+header{
+    float: none;
+    }
+#banner{
+    background-position: 13% 0;
+    background-size: 100%;
+    }
+#box{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60%
+    }
+.home-header{
+    margin-top: 10%;
+    }
+#home-header-inner-container{
+    margin: 0 20px;
+    
+    }
+.bottom-list{
+    margin-top: 10%;
+    text-align: center;
+    padding: 10px 5px;
+    width: 100%;
+    }
+#listone{
+    display: block;
+    padding-bottom: 5px;
+    }
+#listtwo{
+    display: block;
+    padding-bottom: 5px;
+    }
+#listthree{
+    display: block;
+    padding-bottom: 5px;
+    }
+}
