@@ -69,7 +69,7 @@ h2{
     padding-bottom: 15px;
     }
 h3{
-    color: #3E5B7F;
+    color: #457ABD;
     background: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -86,12 +86,16 @@ h3{
 #fb{
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    color: #3b5998;
+    font-family: tahoma, sans-serif;
     }
 #fblink{
-    color: blue;
-    font-family: calibri;
-    font-family: 'Roboto', sans-serif;
+    color: #3b5998;
+    font-family: tahoma, sans-serif;
     }
+#or{
+    color: black;
+}
 #videos{
     text-align: left;
     padding-left: 10px;
@@ -175,7 +179,7 @@ a{
     padding-right: 0;
     display: inline-block;
     box-sizing: borderbox;
-    margin-top: 120px;
+    margin-top: 180px;
     }
 #listone{
     display: inline-block;
