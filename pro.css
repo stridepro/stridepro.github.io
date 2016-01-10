@@ -5,9 +5,10 @@ header{
     }
 .logo{
     height: 30px;
-    margin-left: 200px;
+    margin-left: 20%;
     margin-top: 15px;
     margin-bottom: 15px;
+    
     }
 #email{
     line-height: 12px;
@@ -25,6 +26,7 @@ header{
     transition: all .5s ease;
     margin-top:6px;
     float: right;
+    margin-right: 10%;
     }
     
 #home-header-inner-container{
@@ -69,7 +71,9 @@ h2{
 h3{
     color: #3E5B7F;
     background: white;
-    font-family: Georgia, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
@@ -77,13 +81,16 @@ h3{
 #upload{
     background: white;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     }
 #fb{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     }
 #fblink{
     color: blue;
     font-family: calibri;
+    font-family: 'Roboto', sans-serif;
     }
 #videos{
     text-align: left;
@@ -92,19 +99,20 @@ h3{
 #browser{
     margin-left: 110px;
     margin-bottom: 10px;
-    font-family: calibri;
+    font-family: 'Roboto', sans-serif;
     }
 #fields{
     padding-left: 10px;
     padding-top: 4px;
     display: none;
+    font-family: 'Roboto', sans-serif;
     }
     
 .chosen #fields{
     display: block;
 }
 #contact{
-    font-family: calibri;
+    font-family: 'Roboto', sans-serif;
     }
 #note{
     font-family: calibri;
@@ -155,7 +163,7 @@ h3{
 a{
     text-decoration: none;
     }
-ul{
+.bottom-list{
     width: 100%;
     background-color: #0C4A7B;
     color: #fff;
@@ -166,5 +174,26 @@ ul{
     padding-left: 0;
     padding-right: 0;
     display: inline-block;
-    margin-top: 200px;
+    box-sizing: borderbox;
+    margin-top: 120px;
+    }
+#listone{
+    display: inline-block;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    }
+#listtwo{
+    display: inline-block;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    }
+#listthree{
+    display: inline-block;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    }
+.check{
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
     }
