@@ -168,7 +168,7 @@ a{
     text-decoration: none;
     }
 .bottom-list{
-    width: 100%;
+    width: 110%;
     background-color: #0C4A7B;
     color: #fff;
     font-size: 18px;
@@ -275,7 +275,6 @@ header{
     display: inline-block;
     margin-left: 15%;
     width: 800px;
-    padding-top:10px;
     padding-bottom: 20px;
     }
 
