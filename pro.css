@@ -271,14 +271,14 @@ header{
     
     }
 #videos{
-    font-size: 50px;
+    font-size: 300%;
     display: inline-block;
     margin-left: 15%;
     width: 800px;
-    height: 100px;
     padding-top:10px;
+    padding-bottom: 20px;
     }
-input[type=file]
+
 #contact{
     margin: 10px 10px 10px 10px;
     display: block;
@@ -317,7 +317,7 @@ input[type=file]
     position: relative;
     font-size: 50px;
     }
-#check{
+.check{
     height: 50px;
     width: 50px;
     margin-right: 3px;
@@ -337,13 +337,31 @@ input[type=file]
 }
 
 @media only screen and (min-device-width: 441) and (max-device-width: 901px){
-header{
-    height: 10%;
+hheader{
+    height: 9em;
+    }
+#banner{
+    width:100%;
     }
 .logo{  
-    display: block;
+    height: 75px;
+    display: inline;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 2em;
+    padding-left: 50px;
+    }
+.home-header-mobile{
+    color: #0C4A7B;
+    font-size: 45px;
+    font-weight: bold;
+    display: inline;
+    font-family: roboto;
+    float: right;
+    width: 50%;
+    margin-top:1em;
+    }
+.home-header{
+    display: none;
     }
 #email{
     display: none;
@@ -352,50 +370,69 @@ header{
     background-position: 13% 0;
     background-size: 100%;
     }
+
 #box{
-    width: 100%;
+    margin-top: 60%;
+    padding: 0px 0px 0px 0px;
+    }
+.description{
+    font-size: 60px;
+    text-align: center;
+    margin-top: -10%;
+    width: 800px;
+    padding: 0px;
+    position: relative;
+    }
+#fblink{
+    font-size: 50px;
     margin: 0 auto;
-    margin-top: 60%
+    }
+#fb{
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 10%;
+    width: 800px;
+    font-size: 40px;
+    padding-top: 10%
     }
 #browser{
-    text-align: center;
     display: inline-block;
-    }
-.home-header{
-    display: none;
-    }
-.home-header-mobile{
-    color: #0C4A7B;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 50px;
     margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    
+    }
+#videos{
+    font-size: 300%;
+    display: inline-block;
+    margin-left: 15%;
+    width: 800px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    }
+
+#contact{
+    margin: 10px 10px 10px 10px;
     display: block;
-    font-family: verdana;
-    text-shadow: 1px 3px 1px 10px #000000
-    }
-#home-header-inner-container{
-    margin: 0 20px;
-    }
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: roboto;
+    width: 250%;
+}
 #note{
     margin: 10px 10px 10px 10px;
     display: block;
-    width: 100%;
+    width: 250%;
     height: 75px;
     font-size: 50px;
     text-align: center;
     font-family: Roboto;
 }
-#contact{
-    margin: 10px 10px 10px 10px;
-    display: block;
-    width: 100%;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-    font-family: roboto;
-}
+
 #bottom-button{
-    width: 100%;
+    width: 255%;
     font-size: 50px;
     margin: 0 auto;
     height: 40px;
@@ -404,12 +441,19 @@ header{
     line-height: 50px;
     height: 75px;
     
+    }
 .bottom-list{
-    margin-top: 10%;
+    margin-top: 0%;
     text-align: center;
     padding: 10px 5px;
     width: 100%;
     position: relative;
+    font-size: 50px;
+    }
+.check{
+    height: 50px;
+    width: 50px;
+    margin-right: 3px;
     }
 #listone{
     display: block;
