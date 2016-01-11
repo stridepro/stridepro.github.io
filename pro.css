@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 901px){
+
 header{
     background-color: #FFFFFF;
     background-size: cover;
@@ -200,7 +200,7 @@ a{
     width: 15px;
     margin-right: 3px;
     }
-}
+
 @media only screen and (max-device-width: 440px){
 
 header{
