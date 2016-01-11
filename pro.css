@@ -271,6 +271,7 @@ header{
     
     }
 #videos{
+    -webkit-appearance: none;
     font-size: 300%;
     display: block;
     margin-left: 20%;
