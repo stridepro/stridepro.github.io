@@ -272,10 +272,13 @@ header{
     }
 #videos{
     font-size: 300%;
-    display: inline-block;
+    display: block;
     margin-left: 15%;
     width: 800px;
     padding-bottom: 20px;
+    background: blue;
+    padding-top: 20%;
+    margin-top: 10%
     }
 
 #contact{
