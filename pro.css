@@ -273,10 +273,9 @@ header{
 #videos{
     font-size: 300%;
     display: block;
-    margin-left: 15%;
+    margin-left: 20%;
     width: 800px;
     padding-bottom: 20px;
-    background: blue;
     padding-top: 20%;
     margin-top: 10%
     }
