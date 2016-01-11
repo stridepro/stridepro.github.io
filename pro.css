@@ -69,7 +69,7 @@ h2{
     margin-right: 10%;
     padding-bottom: 15px;
     }
-h3{
+.description{
     color: #457ABD;
     background: white;
     font-family: 'Roboto', sans-serif;
@@ -88,7 +88,6 @@ h3{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #3b5998;
-    font-family: tahoma, sans-serif;
     }
 #fblink{
     color: #3b5998;
@@ -123,12 +122,12 @@ h3{
     font-family: calibri;
     }
 #bottom-button{
-    background-color: #3E5B7F !important;
+    background-color: #ECA755 !important;
     color: #fff !important;
     border: none !important;
     text-align: center !important;
     text-decoration: none !important;
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: 500 !important;
     padding: 7px 30px !important;
     cursor: pointer;
@@ -206,22 +205,27 @@ a{
 
 @media only screen and (max-device-width: 440px){
 header{
-    height: 5em;
+    height: 9em;
+    }
+#banner{
+    width:100%;
     }
 .logo{  
-    height: 50px;
+    height: 75px;
     display: inline;
     margin: 0 auto;
-    padding-top: 10px;
-    padding-left: 30px;
+    padding-top: 2em;
+    padding-left: 50px;
     }
 .home-header-mobile{
     color: #0C4A7B;
-    font-size: 22px;
+    font-size: 45px;
     font-weight: bold;
     display: inline;
-    font-family: verdana;
+    font-family: roboto;
     float: right;
+    width: 50%;
+    margin-top:1em;
     }
 .home-header{
     display: none;
@@ -235,28 +239,72 @@ header{
     }
 
 #box{
-    width: 100%;
-    margin: 0 auto;
     margin-top: 60%;
+    padding: 0px 0px 0px 0px;
     }
 .description{
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     margin-top: -10%;
+    width: 800px;
+    padding: 0px;
+    position: relative;
+    }
+#fblink{
+    font-size: 50px;
+    margin: 0 auto;
+    }
+#fb{
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 10%;
+    width: 800px;
+    font-size: 40px;
+    padding-top: 10%
     }
 #browser{
+    display: inline-block;
+    font-size: 50px;
+    margin: 0 auto;
     text-align: center;
-    display: inline-block;
-    font-size: 30px;
-
+    width: 800px;
+    
     }
-#file{
-    font-size: 30px;
+#videos{
+    font-size: 50px;
     display: inline-block;
+    margin-left: 15%;
+    width: 800px;
     }
 
-#home-header-inner-container{
-    margin: 0 20px;
+#note{
+    margin: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    height: 75px;
+    font-size: 50px;
+    text-align: center;
+    font-family: Roboto;
+}
+#contact{
+    margin: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: roboto;
+}
+#bottom-button{
+    width: 100%;
+    font-size: 50px;
+    margin: 0 auto;
+    height: 40px;
+    padding: 0px;
+    font-size: 50px;
+    line-height: 50px;
+    height: 75px;
+    
     }
 .bottom-list{
     margin-top: 0%;
@@ -264,7 +312,7 @@ header{
     padding: 10px 5px;
     width: 100%;
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
     }
 #check{
     height: 25px;
@@ -325,6 +373,34 @@ header{
 #home-header-inner-container{
     margin: 0 20px;
     }
+#note{
+    margin: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    height: 75px;
+    font-size: 50px;
+    text-align: center;
+    font-family: Roboto;
+}
+#contact{
+    margin: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: roboto;
+}
+#bottom-button{
+    width: 100%;
+    font-size: 50px;
+    margin: 0 auto;
+    height: 40px;
+    padding: 0px;
+    font-size: 50px;
+    line-height: 50px;
+    height: 75px;
+    
 .bottom-list{
     margin-top: 10%;
     text-align: center;
