@@ -51,7 +51,9 @@ header{
     display: inline-block;
     font-family: verdana;
     margin: 350px 0px 200px 100px;
-
+    }
+.home-header-mobile{
+    display:none;
     }
 h2{
     height: 100px;
@@ -69,7 +71,7 @@ h2{
     padding-bottom: 15px;
     }
 h3{
-    color: #457ABD;
+    color: #3E5B7F;
     background: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -86,16 +88,12 @@ h3{
 #fb{
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: #3b5998;
-    font-family: tahoma, sans-serif;
     }
 #fblink{
     color: #3b5998;
-    font-family: tahoma, sans-serif;
+    font-family: calibri;
+    font-family: 'Roboto', sans-serif;
     }
-#or{
-    color: black;
-}
 #videos{
     text-align: left;
     padding-left: 10px;
@@ -179,7 +177,7 @@ a{
     padding-right: 0;
     display: inline-block;
     box-sizing: borderbox;
-    margin-top: 180px;
+    margin-top: 120px;
     }
 #listone{
     display: inline-block;
@@ -201,8 +199,8 @@ a{
     width: 15px;
     margin-right: 3px;
     }
-    
-@media only screen and (max-width: 360px){
+
+@media only screen and (max-width: 400px){
 
 header{
     float: none;
@@ -222,6 +220,66 @@ header{
 #home-header-inner-container{
     margin: 0 20px;
     
+    }
+.bottom-list{
+    margin-top: 10%;
+    text-align: center;
+    padding: 10px 5px;
+    width: 100%;
+    }
+#listone{
+    display: block;
+    padding-bottom: 5px;
+    }
+#listtwo{
+    display: block;
+    padding-bottom: 5px;
+    }
+#listthree{
+    display: block;
+    padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+header{
+    height: 85px;
+    }
+.logo{  
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
+#email{
+    display: none;
+    }
+#banner{
+    background-size: 100%;
+    height: 50%;
+    }
+#box{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60%
+    }
+.home-header{
+    display: none;
+    }
+.home-header-mobile{
+    color: #0C4A7B;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20%;
+    display: inline-block;
+    font-family: verdana;
+    text-shadow: 1px 3px 1px 10px #000000
+    }
+    }
+#home-header-inner-container{
+    width: 100%;
+
     }
 .bottom-list{
     margin-top: 10%;
