@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 901px){
+
 header{
     background-color: #FFFFFF;
     background-size: cover;
@@ -9,7 +9,6 @@ header{
     margin-left: 20%;
     margin-top: 15px;
     margin-bottom: 15px;
-    
     }
 #email{
     line-height: 12px;
@@ -28,6 +27,7 @@ header{
     margin-top:6px;
     float: right;
     margin-right: 10%;
+    display: block;
     }
     
 #home-header-inner-container{
@@ -38,12 +38,11 @@ header{
     background-image: url("http://previews.123rf.com/images/olegdudko/olegdudko1506/olegdudko150600678/41379670-Mechanic-Auto-Repair-Shop-Computer--Stock-Photo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 500px;
     width: 100%;
     position: absolute;
     }
 .home-header{
-    z-index: 100;
     color: white;
     font-size: 50px;
     font-weight: bold;
@@ -52,7 +51,9 @@ header{
     display: inline-block;
     font-family: verdana;
     margin: 350px 0px 200px 100px;
-
+    }
+.home-header-mobile{
+    display:none;
     }
 h2{
     height: 100px;
@@ -64,9 +65,8 @@ h2{
     background-color: white;
     width: 324px;
     float: right;
-    margin-top: 110px;
-    margin-left:110px;
-    margin-right: 150px;
+    margin-top: 13%;
+    margin-right: 10%;
     padding-bottom: 15px;
     }
 h3{
@@ -180,7 +180,8 @@ a{
     padding-right: 0;
     display: inline-block;
     box-sizing: borderbox;
-    margin-top: 180px;
+    position: relative;
+    margin-top: 4%;
     }
 #listone{
     display: inline-block;
@@ -202,31 +203,54 @@ a{
     width: 15px;
     margin-right: 3px;
     }
-}
-@media only screen and (max-device-width: 360px){
+
+@media only screen and (max-device-width: 440px){
 header{
-    float: none;
+    height: 5em;
+    }
+.logo{  
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
+#email{
+    display: none;
     }
 #banner{
     background-position: 13% 0;
     background-size: 100%;
     }
+
 #box{
     width: 100%;
     margin: 0 auto;
     margin-top: 60%
     }
+#browser{
+    text-align: center;
+    display: inline-block;
+    }
 .home-header{
-    margin-top: 10%;
+    display: none;
+    }
+.home-header-mobile{
+    color: #0C4A7B;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    font-family: verdana;
+    text-shadow: 1px 3px 1px 10px #000000
     }
 #home-header-inner-container{
     margin: 0 20px;
     }
 .bottom-list{
-    margin-top: 10%;
+    margin-top: 0%;
     text-align: center;
     padding: 10px 5px;
     width: 100%;
+    position: relative;
     }
 #listone{
     display: block;
@@ -242,9 +266,17 @@ header{
     }
 }
 
-@media only screen and (max-device-width: 900px){
+@media only screen and (min-device-width: 441) and (max-device-width: 901px){
 header{
-    float: none;
+    height: 10%;
+    }
+.logo{  
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
+#email{
+    display: none;
     }
 #banner{
     background-position: 13% 0;
@@ -255,8 +287,21 @@ header{
     margin: 0 auto;
     margin-top: 60%
     }
+#browser{
+    text-align: center;
+    display: inline-block;
+    }
 .home-header{
-    margin-top: 10%;
+    display: none;
+    }
+.home-header-mobile{
+    color: #0C4A7B;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    font-family: verdana;
+    text-shadow: 1px 3px 1px 10px #000000
     }
 #home-header-inner-container{
     margin: 0 20px;
@@ -266,6 +311,7 @@ header{
     text-align: center;
     padding: 10px 5px;
     width: 100%;
+    position: relative;
     }
 #listone{
     display: block;
