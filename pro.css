@@ -270,12 +270,10 @@ header{
     color: #0C4A7B;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 15px;
-    margin-left: 20%;
-    display: inline-block;
+    margin: 0 auto;
+    display: block;
     font-family: verdana;
     text-shadow: 1px 3px 1px 10px #000000
-    }
     }
 #home-header-inner-container{
     width: 100%;
