@@ -1,5 +1,4 @@
 
-
 header{
     background-color: #FFFFFF;
     background-size: cover;
@@ -210,9 +209,22 @@ header{
     height: 5em;
     }
 .logo{  
-    display: block;
+    height: 50px;
+    display: inline;
     margin: 0 auto;
     padding-top: 10px;
+    padding-left: 30px;
+    }
+.home-header-mobile{
+    color: #0C4A7B;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    font-family: verdana;
+    float: right;
+    }
+.home-header{
+    display: none;
     }
 #email{
     display: none;
@@ -225,24 +237,24 @@ header{
 #box{
     width: 100%;
     margin: 0 auto;
-    margin-top: 60%
+    margin-top: 60%;
+    }
+.description{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -10%;
     }
 #browser{
     text-align: center;
     display: inline-block;
+    font-size: 30px;
+
     }
-.home-header{
-    display: none;
+#file{
+    font-size: 30px;
+    display: inline-block;
     }
-.home-header-mobile{
-    color: #0C4A7B;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0 auto;
-    display: block;
-    font-family: verdana;
-    text-shadow: 1px 3px 1px 10px #000000
-    }
+
 #home-header-inner-container{
     margin: 0 20px;
     }
@@ -252,6 +264,12 @@ header{
     padding: 10px 5px;
     width: 100%;
     position: relative;
+    font-size: 30px;
+    }
+#check{
+    height: 25px;
+    width: 25px;
+    margin-right: 3px;
     }
 #listone{
     display: block;
