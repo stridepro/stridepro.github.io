@@ -271,14 +271,26 @@ header{
     
     }
 #videos{
+    content: 'Select a file';
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webskit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight 799;
+    font-size: 10px;
     -webkit-appearance: none;
     font-size: 300%;
-    display: block;
-    margin-left: 20%;
+    display: inline-block;
+    margin-left: 15%;
     width: 800px;
+    padding-top:10px;
     padding-bottom: 20px;
-    padding-top: 20%;
-    margin-top: 10%
     }
 
 #contact{
