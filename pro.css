@@ -203,6 +203,11 @@ a{
     width: 15px;
     margin-right: 3px;
     }
+<<<<<<< HEAD
+=======
+
+@media only screen and (max-device-width: 440px){
+>>>>>>> origin/master
 
 @media only screen and (max-device-width: 440px){
 header{
@@ -266,7 +271,12 @@ header{
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-device-width: 441) and (max-device-width: 901px){
+=======
+@media only screen and (min-device-width: 441px) and (max-device-width: 900px){
+
+>>>>>>> origin/master
 header{
     height: 10%;
     }
