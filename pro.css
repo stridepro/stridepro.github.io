@@ -275,6 +275,8 @@ header{
     display: inline-block;
     margin-left: 15%;
     width: 800px;
+    height: 100px;
+    padding-top:10px;
     }
 #contact{
     margin: 10px 10px 10px 10px;
@@ -372,6 +374,14 @@ header{
     }
 #home-header-inner-container{
     margin: 0 20px;
+    }
+#videos{
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 15%;
+    width: 800px;
+    height: 100px;
+    padding-top:10px;
     }
 #note{
     margin: 10px 10px 10px 10px;
