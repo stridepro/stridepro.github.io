@@ -32,4 +32,8 @@ a img,:link img,:visited img { border:none }
 /* de-italicize address */
 address { font-style:normal }
 
+<<<<<<< HEAD
 /* more varnish stripping as necessary... */
+=======
+/* more varnish stripping as necessary... */
+>>>>>>> origin/master
