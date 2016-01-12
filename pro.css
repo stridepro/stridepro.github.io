@@ -3,6 +3,7 @@ header{
     background-color: #FFFFFF;
     background-size: cover;
     height: 60px;
+    position: fixed;
     }
 .logo{
     height: 30px;
@@ -188,6 +189,7 @@ a{
     display: inline-block;
     box-sizing: borderbox;
     position: relative;
+    margin-top: 0px;
 
     }
 #listone{
@@ -211,6 +213,16 @@ a{
     margin-right: 3px;
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 @media only screen and (max-device-width: 440px){
 header{
     height: 9em;
@@ -341,13 +353,13 @@ header{
     width: cover;
     }
 .bottom-list{
-    margin-top: 0%;
     text-align: center;
     padding: 10px 5px;
     width: 100%;
-    position: fixed;
+    position: relative;
     font-size: 50px;
-    bottom: 0px
+    /* bottom: 0px; */
+    margin-top: 100%;
     }
 .check{
     height: 50px;
@@ -367,6 +379,20 @@ header{
     padding-bottom: 5px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-device-width: 441) and (max-device-width: 901px){
 hheader{
@@ -389,6 +415,7 @@ hheader{
     float: right;
     width: 50%;
     margin-top:1em;
+    position:fixed;
     }
 .home-header{
     display: none;
@@ -478,13 +505,19 @@ hheader{
     
     }
 .bottom-list{
-        margin-top: 0%;
-    text-align: center;
-    padding: 10px 5px;
     width: 100%;
-    position: fixed;
-    font-size: 50px;
-    bottom: 0px
+    background-color: #0C4A7B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    box-sizing: borderbox;
+    position: relative;
+    margin-top: 0px;
     }
 .check{
     height: 50px;
