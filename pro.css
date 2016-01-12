@@ -357,6 +357,7 @@ header{
     font-size: 50px;
     /* bottom: 0px; */
     margin-top:90%;
+    position: relative;
     }
 .check{
     height: 50px;
