@@ -277,7 +277,7 @@ header{
     margin: 0 auto;
     width: 800px;
     font-size: 50px;
-    padding-top: 10%;
+    padding-top: 3%;
     text-align: center;
     }
 #browser{
@@ -349,6 +349,8 @@ header{
     }
 #bottom-banner{
     width: cover;
+    margin-top: 0%;
+    position: absolute;
     }
 .bottom-list{
     text-align: center;
@@ -356,8 +358,10 @@ header{
     width: 100%;
     font-size: 50px;
     /* bottom: 0px; */
-    margin-top:90%;
-    position: relative;
+    margin-top: 800px;
+    position: static;
+    display: inline-block;
+
     }
 .check{
     height: 50px;
