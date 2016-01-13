@@ -32,10 +32,10 @@
 				<p>Instructions: Submit a video of yourself swimming below. Include at least 2 lengths of the pool, with turn. You will receive an email confirmation with further instructions once the submission has been received. </p>
 		
 		<!-- Form -->
-			<button id="prompt" onclick="prompted()">stroke analysis (submit video here) &rarr;</button>
-			<form id="upload">
+		<!--	<button id="prompt" onclick="prompted()">stroke analysis (submit video here) &rarr;</button>
+			<form id="upload"> -->
 				<label>Stroke video(s): <input type="file" id="videos"  multiple required /></label>
-				<input type="text" id="contact" placeholder="Email address or Instagram username" size="30" required />
+				<input type="text" id="contact" placeholder="Email address" size="30" required />
 				<input type="text" id="note" placeholder="Why do you want stroke analysis?" />
 				<button id="submit" onclick="try { upload() } catch(e) { console.log(e) } finally { return false }">Submit for stroke analysis &rarr;</button>
 				<div id="progress"></div>
@@ -44,7 +44,7 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="//instagram.com/stridepro" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="//instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="//www.facebook.com/StridePro-864437257004648" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 					<li><a href="mailto:hello@stride.pro" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 				</ul>
