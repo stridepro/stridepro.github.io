@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	var fblink = document.getElementById('fblink');
 	if (/Android/i.test(navigator.userAgent)) {
-		fblink.href = 'fb-messenger://user/864437257004648';
+		fblink.href = 'fb-messenger://user/william.greenlee.9';
 	}
 	else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-		fblink.href = 'fb-messenger://user-thread/864437257004648';
+		fblink.href = 'fb-messenger://user-thread/william.greenlee.9';
 	}
 	else {
-		fblink.href = 'https://www.facebook.com/messages/864437257004648';
+		fblink.href = 'https://www.facebook.com/messages/william.greenlee.9';
 	}
 }, false);
 
