@@ -1,0 +1,104 @@
+/* Top Navigation*/
+#section-topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    overflow: visible;
+    font: normal 16/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+#section-topbar a {
+    color: #fff;
+    }
+#topbar-inner {
+    background: #111;
+    line-height: 0;
+    text-align: center;
+}
+#section-topbar ul#nav {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    border-right: 1px solid #222;
+
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+}
+
+#section-topbar ul#nav > li {
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+
+#section-topbar ul#nav a {
+    display: block;
+    font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    padding: 18px 20px 18px 20px;
+    border-left: 1px solid #222;
+}
+
+#section-topbar ul#nav a:hover {
+    background: #222;
+    text-decoration: none;
+    border-left: 1px solid #111;
+}
+/*Navigation dropdowns */
+
+#section-topbar ul#nav a ul li{
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: inherit;
+    width: inherit;
+    background-color: #222;
+    padding: 15px 30px;
+    font-variant: small-caps;
+    font-size: large;
+    }
+
+#section-topbar ul#nav a:hover ul li{
+    display: block;
+    z-index: 100;
+    }
+/*nav dropdown */
+    
+#section-topbar ul#nav .active a {
+    background: #df4244;
+    border-left: 1px solid #111;
+}
+
+#section-topbar ul#nav .active a:hover {
+    background: #df4244;
+}
+@media only screen and (max-width: 460px) {
+    #section-topbar ul#nav img {
+        width:25px;
+    }
+    #section-topbar ul#nav a {
+        padding: 12px 12px 12px 12px;
+    }	
+}
+/* jQuery UI tooltip for menu items --- DOESN'T WORK????*/
+.ui-tooltip {
+    color: #eee;
+    background: #222;
+    padding: 10px 15px;
+    font: normal 300 12px/22px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    z-index: 9999;
+    max-width: 300px;
+}
+
+body .ui-tooltip {
+    border: none;
+}
+
