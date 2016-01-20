@@ -2,76 +2,118 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Eval Responses</title>
+	<title>Michael Swim Eval</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,300italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
     <style>
         header{
-            font-family: "Roboto";
-            font-size: 80px;
+            font-family: "Lilita One", cursive;
+            font-size: 100px;
             display: block;
             text-shadow: 1px grey;
             text-align: center;
+            margin: 0 auto;
+            background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: url('http://www.liquidlightning.org/css/pro/cust_stock_bg/pool_blue.jpg');
             }
-        h3, p {
+        p, h3, h4{
             font-family: "Roboto";
+            text-align: left;
+            font-size: 20px;
+            }
+        h3{
+            font-size: 30px;}
             }
         body{
-            background-color: #AFDAFB;
+            background-color: rgba(0,0,0,0);
             }
         iframe{
-            display: inline;
+            display: inline-block;
+            }
+        #vid{
+            display: inline-block;
+            position: static;
+            margin: 0 auto;
+            }
+        .demo{
+            font-family: "Roboto";
+            font-style: italic;
+            }
+        #email{
+            line-height: 12px;
+            color: #0173bd;
+            font-family: Arial;
+            cursor: pointer;
+            padding: 10px 30px;
+            border: 2px solid #0173bd;
+            border-radius: 6px;
+            background-color: white;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+            margin-top:6px;
+            margin-bottom: 30px;
+            float: left;
+            margin-right: 10%;
+            display: block;
+            text-decoration: none;
+            text-align: center;
             }
     </style>
 	<!-- <script src = "C:\Users\Alandra\Desktop\onlinecourses\html\js\swimform.js"></script> -->
 </head>
 <body>
 <header>strokePRO Evaluation</header>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/lfN5NMHU3gs" frameborder="0" allowfullscreen></iframe>
+<iframe id="vid" width="420" height="315" src="https://www.youtube.com/embed/lfN5NMHU3gs" frameborder="0" allowfullscreen></iframe>
 <h3 id="swimmernamehead">Swimmer Name:</h3>
-<p id="swimmername">hi</p>
+    <p id="swimmername">hi</p>
 <h3 id="dateofevalhead">Date of Evaluation:</h3>
-<p id="dateofeval">hi</p>
+    <p id="dateofeval">hi</p>
 <h3 id="concernhead">Evaluation Plan:</h3>
-<p id="concern">hi</p>
+    <p id="concern">hi</p>
 <h3 id="submissionehad">Submission Description:</h3>
-<p id="submission">hi</p>
+    <p id="submission">hi</p>
 <h3 id="starthead">Evaluation of Start:</h3>
-<p id="start">hi</p>
+    <p id="start">hi</p>
 <h3 id="flystrokehead">Butterfly Stroke Evaluation:</h3>
-<p id="flystroke">hi</p>
+    <p id="flystroke">hi</p>
 <h3 id="flyturnhead">Butterfly Turn Evaluation:</h3>
-<p id="flyturn">hi</p>
+    <p id="flyturn">hi</p>
 <h3 id="backstrokehead">Backstroke Evaluation:</h3>
-<p id="backstroke">hi</p>
+    <p id="backstroke">hi</p>
 <h3 id="backturnhead">Backstroke Turn Evaluation:</h3>
-<p id="backturn">hi</p>
+    <p id="backturn">hi</p>
 <h3 id="breaststrokehead">Breaststroke Evaluation:</h3>
-<p id="breaststroke">hi</p>
+    <p id="breaststroke">hi</p>
 <h3 id="breastturnhead">Breaststroke Turn Evaluation:</h3>
-<p id="breastturn">hi</p>
+    <p id="breastturn">hi</p>
 <h3 id="freestrokehead">Freestyle Evaluation:</h3>
-<p id="freestroke">hi</p>
+    <p id="freestroke">hi</p>
 <h3 id="freeopenturnhead">Freestyle Open Turn Evaluation:</h3>
-<p id="freeopenturn">hi</p>
+    <p id="freeopenturn">hi</p>
 <h3 id="freeflipturnhead">Freestyle Flipturn Evaluation:</h3>
-<p id="freeflipturn">hi</p>
+    <p id="freeflipturn">hi</p>
 <h3 id="otherobservationshead">Other Observations:</h3>
-<p id="otherobservations">hi</p>
+    <p id="otherobservations">hi</p>
 <h3 id="drillshead">Suggested Drills:</h3>
-<p id="drills">hi</p>
+    <p id="drills">hi</p>
 <div id="videos">
 <h3 id="youtube1head">Demonstration:</h3>
-<h4 id ="youtube1deschead">hi</h3>
+<h4 id ="youtube1deschead" class="demo">hi</h3>
 <p id="youtube1">hi</p>
 
 
 <h3 id="youtube2head">Demonstration:</h3>
-<h4 id ="youtube2deschead">hi</h3>
+<h4 id ="youtube2deschead" class="demo">hi</h3>
 <p id="youtube2">hi</p>
 
 
 <h3 id="youtube3head">Demonstration:</h3>
-<h4 id ="youtube3deschead">hi</h3>
+<h4 id ="youtube3deschead" class="demo">hi</h3>
 <p id="youtube3">hi</p>
 
 
@@ -83,6 +125,10 @@
 <br>
 <br>
 
+ <a href="mailto:avaohlgren@gmail.com" id="email" onclick"window.location.href='mailto:avaohlgren@gmail.com'>Questions? Contact Ava</a>
+
+<br>
+<br>
 <script>
 var text = {"michael":{"youtube1desc":"Start Techniques","start":"You did a good job keeping your weight on your front foot and center of gravity forward. Some other points to focus and work on are:\n\n1. Bring your head closer to your chest (look at your knees instead of the water) Maintaining your head position while entering the water.\n\n2. Use your legs to push yourself off the block, extending them completely to get as much power as you can.  Keeping the legs together and straight while you enter the water.\n\n3. Point your hands further out in the water (do not point them down to the bottom of the pool in front of the block (to where you want to enter)\n\nBelow I have included a video explaining and demonstrating these start techniques.","youtube2desc":"Catch up Freestyle (to help you reach out further and get that candy bar!) Keep on hand out in front of you and let the other hand come around and enter the water right next to the hand out in front.","freeflipturn":"You do a great job not lifting your head to look at the wall before starting your turn.\n\nNow lets work on the push off!\n\n-after you finish your flip, you should plant both feet on the wall shoulder with apart, then push off on your back.\n-after you push off the wall on your back, rotate to your side then stomach.\n-As soon as you push off the wall, your hands should be in a streamline position.\n\nI have included a video below for flipturns.\n","youtube1":"\u003ciframe width\u003d\"560\" height\u003d\"315\" src\u003d\"https://www.youtube.com/embed/Hl6qlTblj4I\" frameborder\u003d\"0\" allowfullscreen\u003e\u003c\/iframe\u003e","youtube2":"\u003ciframe width\u003d\"560\" height\u003d\"315\" src\u003d\"https://www.youtube.com/embed/g7-xnvc3ap8\" frameborder\u003d\"0\" allowfullscreen\u003e\u003c\/iframe\u003e","concern":"In this evaluation we are going to look at Michael\u0027s track start, freestyle stroke and his flipturn.","conclusion":"Good Luck! I hope to follow up with you in 4 weeks to see how you have progressed after putting these tips into practice.","swimmername":"Michael","youtube3":"\u003ciframe width\u003d\"560\" height\u003d\"315\" src\u003d\"https://www.youtube.com/embed/NDNPTBA4klQ\" frameborder\u003d\"0\" allowfullscreen\u003e\u003c\/iframe\u003e","dateofeval":"Sun Jan 17 00:00:00 GMT-05:00 2016","youtube3desc":"Breathing Techniques","submission":"has submitted for evaluation a video from practice of a 25 yard freestyle beginning with a track start and finishing with a flipturn.","freestroke":"You do a good job keeping your head down and not lifting it when you breath. \n\nArm Position:\n1. When you enter the water on each stroke, I want you to focus on reaching as far out in front of you as you can, entering with your fingertips.  Pretend like there is candy in front of you that you want to grab!\n-I have included a video drill to work on this below (catch up freestyle)\n\nBreathing:\n2. Very Important Tip!: do not over rotate to breath (do not turn your whole body to breath, only rotate your shoulders a little and turn your head)\n-Try to keep one goggle in the water when breathing \n-Keep your legs kicking the entire time, even when breathing\nIf you rotate too far to breath, it causes your legs to stop kicking, your legs to cross each other, and your stroke to pause.\n-I have included a video to work on breathing techniques below.","otherlinks":"\u003ciframe width\u003d\"560\" height\u003d\"315\" src\u003d\"https://www.youtube.com/embed/8EL3v1saCQw\" frameborder\u003d\"0\" allowfullscreen\u003e\u003c\/iframe\u003e","timestamp":"Sun Jan 17 14:22:55 GMT-05:00 2016"}}
 
