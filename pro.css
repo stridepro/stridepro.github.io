@@ -3,13 +3,84 @@ header{
     background-size: cover;
     height: 60px;
     }
-.logo{
+
+.nav ul {
+    *zoom:1;
+    list-style:none;
+    margin:none;
+    padding:0;
+    z-index: 90;
+    position: relative;
+    background-color:rgba(51, 51, 51, 0.5);
+    }
+.nav ul:before, .nav ul:after{
+    content:"";
+    display:table;
+
+    }
+.nav ul:after {
+    clear: both;
+    }
+.nav a {
+    display: block;
+    padding: 10px 20px;
+    line-height:1.2em;
+    }
+    
+.nav a:hover {
+    text-decoration: none;
+    color: red;
+    }
+
+/*logo{
     height: 30px;
     margin-left: 20%;
     margin-top: 15px;
     margin-bottom: 15px;
+    display: block;
+    } */
+.logo{
+    font-family: "Architects Daughter";
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-left: 40px;
+    display: inline-block !important;
+    float: left;
+    font-weight: bold;
+    z-index: 100;
     }
 #email{
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: "open sans";
+    display: inline-block !important;
+    float: left;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 20px;
+  }
+#email:hover{
+    color: #218be7;
+    text-shadow: text-shadow: 0 0 3px white;
+    }
+.navcontact{
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 5px 50px;
+    clear: top;
+    }
+
+/*#email{
     line-height: 12px;
     color: #0173bd;
     font-family: Arial;
@@ -27,23 +98,32 @@ header{
     float: right;
     margin-right: 10%;
     display: block;
-    }
-    
+    z-index: 10000;
+    }*/
+     
 #home-header-inner-container{
-    height:92vh;
+    height:100vh;
     position: relative;
     }
-.page-container-section{
-    width: 100%;
-    }
+
 #banner{
-    background-image: url("http://previews.123rf.com/images/olegdudko/olegdudko1506/olegdudko150600678/41379670-Mechanic-Auto-Repair-Shop-Computer--Stock-Photo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 88vh;
     width: 100%;
     position: absolute;
     }
+
+#bannerimage{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-filter: ;  /* Chrome, Safari, Opera */
+    filter: blur(0px);
+    top: -7vh;
+} 
 .home-header{
     color: white;
     font-size: 50px;
@@ -65,11 +145,13 @@ h2{
 
 #box{
     background-color: white;
-    width: 324px;
+    width: 350px;
     float: right;
     margin-top: 13%;
     margin-right: 10%;
     padding-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     }
 .description{
     color: #457ABD;
@@ -79,7 +161,8 @@ h2{
     font-style: italic;
     margin: 0 auto;
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    font-size: 30px;
     }
 #upload{
     background: white;
