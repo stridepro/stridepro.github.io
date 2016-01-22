@@ -150,7 +150,6 @@ h2{
     margin-right: 10%;
     padding-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
     }
 .description{
     color: #457ABD;
@@ -266,6 +265,11 @@ h2{
 #thanks{
     display: none;
 }
+#closearrow{
+    margin-left: 48%;
+    color:grey;
+    cursor: pointer;
+    }
 .uploading #progress{
     display:block;
 }
