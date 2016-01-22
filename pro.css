@@ -102,14 +102,12 @@ header{
     }*/
      
 #home-header-inner-container{
-    height:100vh;
+    height:95vh;
     position: relative;
     }
-
 #banner{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     position: absolute;
     }
 
@@ -117,7 +115,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: blue;
-    height: 100vh;
+    height: 97vh;
+    width: 100%;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-filter: ;  /* Chrome, Safari, Opera */
