@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-
     <link rel="stylesheet" href="css\undo.css">
-
     <link rel="stylesheet" href="assets/css/undo.css">
-
     <link rel="stylesheet" href="pro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,300italic' rel='stylesheet' type='text/css'>
 	<title>Will Fix</title>
 </head>
@@ -19,20 +17,23 @@
         <h2 class="home-header-mobile">Car Repair Made Easy</h2>
     </header>
     <div id="banner">
+        <div id="banner">
         <h2 class="home-header">Car Repair Made Easy</h2>
-         
     </div>
     <div id="home-header-inner-container" class="page-container-section">
         <div id="box">
             <h3 class="description">Submit video or audio of your car problem and I will respond within 5 minutes with a recommendation. Guaranteed.</h3>
+            <button id="getquote" onclick="document.getElementById('fields').style.display = 'block';">Get Quote</button>
+            <div id="fields">
             <form id="upload">
+            
                 <section id="fb">
-                    <a id="fblink" class="facebook" href="https://www.facebook.com/messages/william.greenlee.9">Send via Facebook</a>
+                    <a id="fblink" class="facebook">Send via Facebook</a>
                 <p id="or">-or-</p>
                 </section>
                 <label id="browser">Send in browser: </label> 
                 <input type="file" id="videos" muliple required/>
-        <div id="fields">
+        
             <input type="email" id="contact" placeholder="Email address" size="30" required />
             <textarea id="note" placeholder="Problem description" rows="5 cols="25"></textarea>
             <button id="bottom-button" onclick="try {upload()} catch(e) { console.log(e) } finally { return false }">Submit</button>
@@ -43,8 +44,7 @@
             <span id="thanks">Thank you! We will be in touch shortly.</span>
             <script src="upload.js"></script>
             </div>
-    <div id="bottom-banner">
-
+<!--
    <ul class="bottom-list">
 
         <li id="listone">
@@ -56,19 +56,58 @@
         <li id="listthree">
             <p><img src="images/check.png" class="check">Free</p>
         </li>
-    </ul>
+    </ul> -->
+    </div>
+
+    <div class="background-gray" id="second-section">
+        <div class="second-section">
+                <div class="col-1g-4 col-md-4 col-sm-12 text-center">
+                <div class="container-column">
+                    <i class="fa fa-smile-o fa-3x"></i>
+                    <h5 class="text-dark-gray">WE MAKE IT EASY</h5>
+                        <p class="text-gray">
+                            "Get a quote and book a service online 24/7. Our mechanics will come to your home or office, even on evenings and weekends."
+                            </p>
+                            <a href="request-service-online">
+                            <div class="btn-more pull-bot"> "Learn More"
+                            </div>
+                            </a>
+                        </div>
+            </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 text-center">
+                    <div class="container-column">
+                    <i class="fa fa-dollar fa-3x"></i>
+                    <h5 class="text-dark-gray">FIXED UPFRONT PRICING</h5>
+                        <p class="text-gray">
+                            "We offer guaranteed upfront pricing and savings up to 30% compared to repair shops."
+                            </p>
+                            <p>Book with confidence.</p>
+                            <a href="/pricing">
+                            <div class="btn-more pull-bot"> "Learn More"
+                            </div>
+                            </a>
+                        </div>
+            </div>
+                <div class="col-1g-4 col-md-4 col-sm-12 text-center">
+                    <div class="container-column">
+                    <i class="fa fa-shield fa-3x"></i>
+                    <h5 class="text-dark-gray">HAPPINESS GUARANTEED</h5>
+                        <p class="text-gray">
+                            'We only work with highly rated mechanics.</p>
+                            <p>All services are backed by our 12-month / 12,000-mile warranty.</p>
+                            <a href="/we-warranty-the-service">
+                            <div class="btn-more pull-bot"> "Learn More"
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
     </div>
     </body>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-72360710-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
  
     
