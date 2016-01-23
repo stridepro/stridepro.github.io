@@ -280,9 +280,14 @@ h2{
     display: none;
 }
 #closearrow{
-    margin-left: 48%;
-    color:grey;
+    color: rgba(128, 128, 128, 0.48);
     cursor: pointer;
+    text-align: center;
+    font-family: roboto;
+    }
+#closearrow:hover{
+    cursor:pointer;
+    color: rgba(128, 128, 128, 1);
     }
 .uploading #progress{
     display:block;
