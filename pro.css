@@ -180,8 +180,13 @@ h2{
     color: black;
 }
 #videos{
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    font-family: roboto;
+    font-size: 15px;
     }
 #browser{
     margin-left: 110px;
@@ -220,16 +225,25 @@ h2{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #1570cd;
     width: 40%;
-    margin: 0px 30%;
+    margin: 10px 30%;
 }
 .chosen #fields{
     display: block;
 }
 #contact{
     font-family: 'Roboto', sans-serif;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    margin-left: 50px;
     }
 #note{
-    font-family: calibri;
+    font-family: roboto;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 65%;
+    text-align: center;
     }
 #bottom-button{
     background-color: #ECA755 !important;
@@ -361,8 +375,8 @@ a{
     white-space: nowrap;
     float: left;
     width: 5%;
-    margin: 100px 20px 10px 10px;
-    margin-left: 20px;
+    margin: 100px 20px 10px 20px;
+
     vertical-align: text-top;;
 }
 
