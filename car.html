@@ -52,7 +52,8 @@
             <textarea id="note" placeholder="Problem description" rows="5 cols="25"></textarea>
             <button id="bottom-button" onclick="try {upload()} catch(e) { console.log(e) } finally { return false }">Submit</button>
             <br>
-            <i class="fa fa-arrow-up" id="closearrow" onclick="document.getElementById('fields').style.display = 'none';"></i>
+            <!--<i class="fa fa-arrow-up" id="closearrow" onclick="document.getElementById('fields').style.display = 'none';"></i> -->
+            <p id="closearrow" onclick="document.getElementById('fields').style.display = 'none';">Close</p>
             </div>
     		</form>
     	<progress value="0" max="100" id="progress"</progress>
