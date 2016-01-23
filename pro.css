@@ -325,10 +325,8 @@ a{
     }
 
 #second-section{
-    background: gray;
-    }
-.second-section{
-    background: gray;
+    background: blue;
+    width: 100% !important;
     }
 .container-column{
    font-family: open sans;
@@ -338,10 +336,50 @@ a{
    float: left;
    padding: 10px 20px;
    box-sizing: border-box;
+  
    }
-.
+.g-header-text{
+    font-family: "open sans";
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+    padding-top:50px;
+    width: 100%;
+    }
+.col-lg-12 {
+    margin-bottom: 50px;
+    }
+.home-car-logos img {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    max-height: 100px;
+    max-width: 150px;
+    display: inline;
+    white-space: nowrap;
+    float: left;
+    width: 5%;
+    margin: 100px 20px 10px 10px;
+    margin-left: 20px;
+    vertical-align: text-top;;
+}
+
+.home-car-logos img:hover {
+    opacity: 1;
+    }
+.btn-gray-stroke-small{
+    display:none;}
     
-    
+.center-vertical {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
       
     
     
