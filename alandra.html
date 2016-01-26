@@ -9,7 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700' rel='stylesheet'
           type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/personalwebsite.css">
+    <link rel="stylesheet" href="css/personalwebsite.css">
     </head>
 <body>
 <div id="section-topbar">
@@ -121,7 +121,7 @@
                     <p class="courseschool">University of Michigan on Coursera</p>
         <br>
         <p class="employment">Work Experience</p>
-            <p class="jobtitle" id="">Medical Researcher</p>
+            <p class="jobtitle" id="">Consultantr</p>
                 <p class="org">Algocore LLC</p>
                 <p class="loc">Pittsburgh, PA</p>
                 <p class="date">Feb 2015 - present</p>
@@ -167,6 +167,28 @@
 <!-- Contact -->
 <!-- Hobbies/Athletics -->
          
-
+<!-- Contact -->
+<br>
+<div id="section-contact"> 
+  <div class="container"> 
+    <div class="nine columns"><p class="contact">Contact</p> 
+      <div id="contact-warning"></div>
+      <!-- // #contact-warning -->
+      <div id="contact-success">Your message was successfuly sent, thank you!</div>
+      <!-- // #contact-warning -->
+      <form name="contactForm" id="contactForm" method="GET" action="mailto:amgreenlee@alumni.dmu.edu">
+        <fieldset>
+        <label for="contactName">Subject </label>
+        <input name="subject" size="30" value="" type="text"/>
+        <br/>
+        <label for="contactMessage">Message <span class="required">*</span></label>
+        <textarea name="body" id="contactMessage" rows="6" cols="7"></textarea>
+      
+        <br/>
+        <label class="placeholder">&nbsp;</label>
+        <button type="submit" value="Send" class="submit">Send Email</button>
+        </fieldset>
+      </form>
+    </div>
 </body>
 </html>
