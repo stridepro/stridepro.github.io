@@ -102,3 +102,99 @@ body .ui-tooltip {
     border: none;
 }
 
+
+/*---------CONTACT--------------*/
+/* Register Form */
+#section-contact form {
+    margin-bottom: 40px;
+}
+
+#section-contact form p,
+#section-contact label,
+#section-contact legend { 
+    font: normal 13px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-contact label {
+    display: inline-block;
+    float: left;
+    width: 155px;
+    margin: 6px 0;
+}
+
+#section-contact input, 
+#section-contact textarea, 
+#section-contact select { 
+    width: 280px; 
+    padding: 14px 20px; 
+    color: #eee; 
+    background: #333;
+    margin: 0 0 35px 0; 
+    border: 0;
+    outline: none;
+}
+
+#section-contact input:focus, 
+#section-contact textarea:focus, 
+#section-contact select:focus { 
+    color: #fff;
+    background-color: #df4244;
+}
+
+#section-contact button.submit {
+    font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    cursor: pointer;
+    color:#fff;
+    background:#BF73EC;
+    padding: 20px 28px;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#section-contact button.submit:hover { 
+    color: #df4244;
+    background: #fff; 
+}
+
+#section-contact span.required { 
+    color: #df4244;
+    font-size: 13px;  
+} /* Select the color of the * if the field is required. */
+
+
+#contact-warning,
+#contact-success {
+    font: normal 12px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#contact-warning {
+    display: none;
+    color: #fff;
+    background: #dd3333;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+#contact-success {
+    display: none;
+    color: #77aa44;
+    background: #111;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+/* HTML5 Placeholder */
+::-webkit-input-placeholder {
+    color: #df4244;
+}
+
+:-moz-placeholder {  
+    color: #df4244;
+}
+s
