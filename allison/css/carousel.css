@@ -8,8 +8,15 @@ body {
 }
 
 #greenleelaw {
-    height: 150px !important;
-    position: relative !important;
+    height: 150px;
+    position: relative;
+    }
+@media (max-width: 767px) {
+#greenleelaw {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    margin-top:-150px;
 
     }
 /* CUSTOMIZE THE NAVBAR
