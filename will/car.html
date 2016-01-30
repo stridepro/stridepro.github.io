@@ -98,16 +98,23 @@
         
             <input type="email" id="contact" placeholder="Email address" size="30" required />
             <textarea id="note" placeholder="Problem description" rows="5 cols="25"></textarea>
+            
             <button id="bottom-button" onclick="try {upload()} catch(e) { console.log(e) } finally { return false }">Submit</button>
+            <script> document.getElementById("bottom-button").addEventListener("click", function(){
+    document.getElementById("progressbar").style.display = 'block';
+    });</script>
             <br>
-            <!--<i class="fa fa-arrow-up" id="closearrow" onclick="document.getElementById('fields').style.display = 'none';"></i> -->
+            
             <p id="closearrow" onclick="document.getElementById('fields').style.display = 'none';">Close</p>
-            <progress value="0" max="100" id="progress"</progress>
+            
             </div>
     		</form>
-    	
+            <div id="progressbar">
+            <progress value="0" max="100" id="progress"</progress>
+            
+            </div>
             <span id="thanks">Thank you! We will be in touch shortly.</span>
-            <script src="upload.js"></script>
+            <script src="js/upload.js"></script>
             </div>
               
               
