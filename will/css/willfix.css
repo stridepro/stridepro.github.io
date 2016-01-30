@@ -148,9 +148,14 @@
     margin-top: 6px;
     }
 #progress{
-    margin-left: 83px;
-    display: none;
+    margin: auto;
+    margin-top: 5px;
+    
 }
+#progressbar{
+    display: none;
+    }
+    
 #thanks{
     display: none;
 }
