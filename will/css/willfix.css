@@ -166,3 +166,27 @@
 .done #thanks{
     display: inline-block;
 }
+.home-car-logos img {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    max-height: 100px;
+    max-width: 100px;
+    display: inline;
+    white-space: nowrap;
+    vertical-align: top;
+    margin: 10px auto;
+}
+
+.home-car-logos img:hover {
+    opacity: 1;
+    }
+.center-vertical {
+    position: relative;
+    top: 50%;
+ }
+ .btn-gray-stroke-small{
+    display:none;}
+    
