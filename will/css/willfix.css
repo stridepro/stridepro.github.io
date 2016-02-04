@@ -24,6 +24,7 @@
     padding-left: 15px;
     background-color: #313131;
     }
+	
 #slogan{
     font-size: 15px;
     text-shadow: 1px 1px 1px #ddd;
@@ -150,8 +151,9 @@
 #progress{
     margin: auto;
     margin-top: 5px;
-    
+    display: none;
 }
+
 #progressbar{
     display: none;
     }
