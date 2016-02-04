@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Let's Fix</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Let's Fix</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,300italic' rel='stylesheet' type='text/css'>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Pacifico|Righteous|Architects+Daughter|Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,300italic' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
     <link href="css/carousel.css" rel="stylesheet">
-<link rel="stylesheet" href="css/willfix.css">
+	<link rel="stylesheet" href="css/willfix.css">
 
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
-</head>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.4.min.js"></script>
+	</head>
 <body>
 
 
@@ -101,7 +101,7 @@
             
             <button id="bottom-button" onclick="try {upload()} catch(e) { console.log(e) } finally { return false }">Submit</button>
             <script> document.getElementById("bottom-button").addEventListener("click", function(){
-    document.getElementById("progressbar").style.display = 'block';
+    document.getElementById("progress").style.display = 'block';
     });</script>
             <br>
             
@@ -109,10 +109,8 @@
             
             </div>
     		</form>
-            <div id="progressbar">
             <progress value="0" max="100" id="progress"</progress>
-            
-            </div>
+
             <span id="thanks">Thank you! We will be in touch shortly.</span>
             <script src="js/upload.js"></script>
             </div>
