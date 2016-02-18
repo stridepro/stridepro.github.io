@@ -16,7 +16,7 @@
 	height: initial !important;
 	}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) {
 .first-slide {
     height: 500px;
     width: 100%;
