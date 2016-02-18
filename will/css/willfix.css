@@ -1,10 +1,38 @@
-.first-slide{
-    position: relative !important;
-    background-size: cover !important;
+.first-slide {
+    height: 500px;
+    width: 100%;
+    background-color: #3D4A73;
+    background-image: url("http://i.imgur.com/nag0dih.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -420px;
+}
 
-    }
+.carousel-inner > .item > img {
+    position: absolute;
+    top: -8em;
+    left: 0;
+    min-width: initial !important; 
+	height: initial !important;
+	}
+
+@media (max-width: 768px) {
+.first-slide {
+    height: 500px;
+    width: 100%;
+    background-color: #3D4A73;
+    background-image: url("http://i.imgur.com/HfzBwjQ.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+  }
+
+.featurette-heading {
+    margin-top: 10px;
+}
 .navbar-brand{
-    font-family: "Architects Daughter";
+    font-family: "shadows into light";
     color: #FFFFFF;
     font-size: 40px;
     margin-left: 40px;
@@ -24,11 +52,12 @@
     padding-left: 15px;
     background-color: #313131;
     }
-	
-#slogan{
-    font-size: 15px;
-    text-shadow: 1px 1px 1px #ddd;
-    }
+
+#slogan {
+    font-size: 45px;
+    text-shadow: 1px 3px 4px rgba(10, 10, 10, 0.66);
+    font-family: "covered by your grace";
+}
 #upload{
     background: white;
     margin: 0 auto;
@@ -60,8 +89,25 @@
     margin-top: 8px;
     font-family: roboto;
     font-size: 15px;
-    color: #000000;
+    color: #ffffff;
     }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile-6  + label span {
+    width: 200px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
 #browser{
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -194,7 +240,23 @@
     vertical-align: top;
     margin: 10px auto;
 }
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
 
+.flex-item {
+  vertical-align: middle;
+
+}
 .home-car-logos img:hover {
     opacity: 1;
     }
@@ -204,4 +266,6 @@
  }
  .btn-gray-stroke-small{
     display:none;}
-    
+.g-header-text{
+	text-align: center;
+	}
