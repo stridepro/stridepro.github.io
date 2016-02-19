@@ -16,18 +16,6 @@
 	height: initial !important;
 	}
 
-@media screen and (max-width: 900px) {
-.first-slide {
-    height: 500px;
-    width: 100%;
-    background-color: #3D4A73;
-    background-image: url("http://i.imgur.com/HfzBwjQ.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-  }
-
 .featurette-heading {
     margin-top: 10px;
 }
@@ -269,3 +257,15 @@
 .g-header-text{
 	text-align: center;
 	}
+	
+@media only screen and (max-width: 900px) {
+.first-slide {
+    height: 500px;
+    width: 100%;
+    background-color: #3D4A73;
+    background-image: url("http://i.imgur.com/HfzBwjQ.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+  }
