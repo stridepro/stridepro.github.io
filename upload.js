@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.getElementById('videos').addEventListener('change', chosen);
 	
 	var fblink = document.getElementById('fblink');
+	if (!fblink) return;
 	if (/Android/i.test(navigator.userAgent)) {
 		fblink.href = 'fb-messenger://user/william.greenlee.9';
 	}
